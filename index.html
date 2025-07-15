@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-35D09ZJ5JK"></script>
 <script>
@@ -13,6 +17,16 @@
   gtag('js', new Date());
 
   gtag('config', 'G-35D09ZJ5JK');
+
+  function scrollCarousel(direction) {
+  const container = document.querySelector('.carousel-track');
+  const scrollAmount = 350; // pixels
+  container.scrollBy({
+    left: scrollAmount * direction,
+    behavior: 'smooth'
+  });
+}
+
 </script>
   <style>
     .fade-in {
@@ -35,16 +49,123 @@
   <link rel="icon" type="image/png" href="cutelogo.png"/>
   
   <style>
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  color: var(--color-primary);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: white;
+  background-color: var(--color-accent);
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+section {
+  padding: 4rem 5%;
+  border-radius: 12px;
+}
+
 .standard-section {
-  background-color: #ffffff;
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.card {
+  background-color: var(--color-card);
+  border: none;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+.button {
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background-color: #d62839;
+}
+nav, footer {
+  background-color: var(--color-dark);
+  color: white;
+  padding: 1rem 2rem;
+}
+
+
+
+body {
+  font-family: 'Source Serif 4', serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4C1D3D; /* A modern dark gray */
+  background-color: #4C1D3D;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #4C1D3D; /* Slightly darker for strong contrast */
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+strong {
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+
+
+.standard-section {
+  background-color: #FFFFFF;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
   padding: 2rem;
   margin: 2rem auto;
   max-width: 900px;
-  width: 90%;
-  border: 1px solid #C0D9E6;
+  width: 100%;
+  /* Remove this line ↓ */
+  /* border: 1px solid #4C1D3D; */
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -62,10 +183,11 @@ html {
 
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: aliceblue;
-      color: #2F4156;
+      background-color: rgb(255, 255, 255);
+      color: #852E4E;
     }
 
+    
     header {
       header::before {
   content: "";
@@ -84,7 +206,7 @@ header {
   position: relative;
 }
 
-      background-image: url('image.png');
+    
       background-size: cover;
       background-position: center;
       text-align: center;
@@ -110,7 +232,7 @@ header {
 
 
 .cta-buttons a {
-  background-color: #F8C8DC;   /* Soft pink */
+  background-color: #4C1D3D;   /* Soft pink */
   color: white;                /* White text */
   padding: 0.9rem 1.6rem;
   margin: 0.5rem;
@@ -121,7 +243,7 @@ header {
   font-size: 1rem;
   transition: all 0.3s ease-in-out;
   border: none;
-  outline: 2px solid #F8C8DC;
+  outline: 2px solid #4C1D3D;
   outline-offset: -5px;
 }
 
@@ -129,13 +251,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #F4F9FB;
+  background-color: #ffffff;
   padding: 1rem 1.5rem;
   border-radius: 10px;
-  border-left: 6px solid #2F4156;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-left: 6px solid #ffffff;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
   transition: transform 0.2s ease;
-  color: #2F4156;
+  color: #ffffff;
 }
 
 .cert-card:hover {
@@ -151,13 +273,13 @@ header {
 
 .cert-org {
   font-size: 0.9rem;
-  color: #567C8D;
+  color: #fffeff;
   margin: 0.2rem 0 0;
 }
 
 .cert-link {
   font-weight: bold;
-  color: #2F4156;
+  color: #852E4E;
   font-size: 1rem;
 }
 
@@ -167,9 +289,83 @@ header {
   margin: auto;
 }
 
+.section-carousel {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+}
+
+.carousel-card {
+  flex: 0 0 300px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 1rem;
+  text-align: center;
+}
+
+.carousel-card img {
+  width: 100%;
+  border-radius: 12px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.carousel-card audio {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: #852E4E;
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background: #A13E5B;
+}
+
+.carousel-btn.prev {
+  left: -10px;
+}
+
+.carousel-btn.next {
+  right: -10px;
+}
+
+/* Optional: Responsive */
+@media (max-width: 768px) {
+  .carousel-card {
+    flex: 0 0 80%;
+  }
+}
 
     nav {
-  background-color: #C3DCEB;  /* light blue from your screenshot */
+  background-color: #ffffff;  /* light blue from your screenshot */
   text-align: center;
   padding: 1rem 0;
   position: sticky;
@@ -182,8 +378,8 @@ header {
 
 
 nav a {
-  background-color: #2F4156;        /* dark blue */
-  color: #C3DCEB;                   /* light blue text */
+  background-color: #852E4E;        /* dark blue */
+  color: #ffffff;                   /* light blue text */
   padding: 10px 20px;
   margin: 0 0.5rem;
   border-radius: 14px;
@@ -191,7 +387,7 @@ nav a {
   font-weight: bold;
   font-size: 1rem;
   border: none;                     /* remove default border */
-  outline: 3px solid #C3DCEB;       /* single light blue outline */
+  outline: 3px solid #4C1D3D;       /* single light blue outline */
   outline-offset: -6px;             /* brings it slightly inside */
   display: inline-block;
 }
@@ -202,7 +398,7 @@ nav a {
 
 
 nav a:hover {
-  background-color: #3B4F68;
+  background-color: #ffffff;
 }
 
 .card img {
@@ -213,21 +409,29 @@ nav a:hover {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
+.gradient-line {
+  border: none;
+  height: 3px;
+  background: linear-gradient(to right, #4C1D3D, #ffffff, #4C1D3D);
+  margin: 3rem auto;
+  width: 90%;
+  border-radius: 6px;
+}
 
 
 section {
   max-width: 900px;
-  width: 90%;
+  width: 100%;
   margin: 2rem auto;
   padding: 2rem;
   border-radius: 12px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   box-shadow: 0 2px 6px rgba(0,0,0,0.04);
 }
 
 
     h2 {
-      color: #567C8D;
+      color: #4C1D3D;
     }
 
     ul {
@@ -240,8 +444,8 @@ section {
 
     .quote {
       font-style: italic;
-      color: #2F4156;
-      border-left: 4px solid #567C8D;
+      color: #852E4E;
+      border-left: 4px solid #4C1D3D;
       padding-left: 1rem;
       margin: 1rem 0;
     }
@@ -251,26 +455,26 @@ section {
       padding: 1rem;
       border-radius: 6px;
       margin-top: 2rem;
-      box-shadow: 1px 2px 4px 2px #C0D9E6;
+      box-shadow: 1px 2px 4px 2px #4C1D3D;
     }
 
     .aspiration {
-  background-color: #2F4156;
-  color: #C0D9E6;
+  background-color: #852E4E;
+  color: #4C1D3D;
   padding: 2rem;
   border-radius: 10px;
   text-align: center;
   margin-top: 2rem;
   max-width: 900px;
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 25px;
-  border: 1px solid #C0D9E6;
+  border: 1px solid #4C1D3D;
 }
 .badge {
-  background-color: #EAF2F8;
-  color: #2F4156;
+  background-color: #4C1D3D;
+  color: #852E4E;
   padding: 6px 14px;
   border-radius: 50px;
   font-size: 0.85rem;
@@ -282,8 +486,8 @@ section {
 
     footer {
       text-align: center;
-      background-color: #2F4156;
-      color: #C0D9E6;
+      background-color: #ffffff;
+      color: #4C1D3D;
       padding: 1rem;
       margin-top: 3rem;
       box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
@@ -305,14 +509,14 @@ section {
       }
     }
     nav a.active {
-  color: #ffffff;
-  background-color: #567C8D;
+  color: #FFFFFF;
+  background-color: #ffffff;
   padding: 6px 10px;
   border-radius: 5px;
 }
 .cta-buttons a {
-  background-color: #C3DCEB;
-  color: #2F4156;
+  background-color: #4C1D3D;
+  color: #852E4E;
   padding: 0.9rem 1.6rem; /* more padding to give space inside */
   margin: 0.5rem;
   text-decoration: none;
@@ -322,21 +526,21 @@ section {
   font-size: 1rem;
   transition: all 0.3s ease-in-out;
   border: none;
-  outline: 2px solid #2F4156;      /* dark blue border */
+  outline: 2px solid #852E4E;      /* dark blue border */
   outline-offset: -6px;            /* pulls the border inside */
 }
 
 
 
 .cta-buttons a:hover {
-  background-color: #B0D1E3;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
   transform: translateY(-2px);
 }
 nav a.active {
-  background-color: #C0D9E6 !important;
-  color: #2F4156 !important;
-  box-shadow: 0 0 0 2px #2F4156 inset;
+  background-color: #852E4E !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 0 2px #852E4E inset;
 }
 
 .cert-grid {
@@ -344,23 +548,44 @@ nav a.active {
   flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
-  margin-top: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
 }
 
 .cert-booklet {
-  background: #ffffff;
+  flex: 1 1 250px;
+  max-width: 300px;
+  background: #FFFFFF;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 1.5rem;
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 1.2rem;
-  width: 100%;
-  max-width: 500px;
-  text-decoration: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-left: 6px solid #2F4156;
 }
+
+
+.cert-booklet:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.cert-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+
+@media (max-width: 768px) {
+  .cert-booklet {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
 
 .cert-booklet:hover {
   transform: scale(1.02);
@@ -372,20 +597,25 @@ nav a.active {
   height: 70px;
   object-fit: contain;
   border-radius: 10px;
-  background: #f8f8f8;
+  background: #ffffff;
   padding: 0.4rem;
 }
 
 .cert-booklet h3 {
   margin: 0;
-  color: #2F4156;
+  color: #852E4E;
   font-size: 1.1rem;
 }
 
 .cert-org {
   margin: 0.4rem 0 0.2rem;
-  color: #567C8D;
+  color: #4C1D3D;
   font-size: 0.9rem;
+}
+.cert-logo {
+  filter: none !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
 }
 
 .cert-validity {
@@ -394,7 +624,7 @@ nav a.active {
 }
 
 body.dark-mode {
-  background-color: #1e1e1e;
+  background-color: #4C1D3D;
   color: #f0f0f0;
 }
 
@@ -405,6 +635,9 @@ body.dark-mode nav {
 body.dark-mode .standard-section {
   background: #2b2b2b;
   color: #fff;
+}
+h1 {
+  color: #852E4E;
 }
 
 .rec-carousel {
@@ -421,9 +654,10 @@ body.dark-mode .standard-section {
   transition: transform 0.6s ease;
 }
 
+
 .rec-card.small {
   min-width: 100%;
-  background: #ffffff;
+  background: #FFFFFF;
   border-radius: 14px;
   padding: 1.8rem 1.2rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
@@ -442,7 +676,7 @@ body.dark-mode .standard-section {
 
 .rec-card blockquote {
   font-style: italic;
-  color: #2F4156;
+  color: #852E4E;
   font-size: 0.98rem;
   line-height: 1.5;
   margin: 0.4rem 0;
@@ -451,12 +685,12 @@ body.dark-mode .standard-section {
 .rec-card h4 {
   margin-top: 1rem;
   margin-bottom: 0.3rem;
-  color: #2F4156;
+  color: #852E4E;
   font-size: 1rem;
 }
 
 .rec-title {
-  color: #567C8D;
+  color: #4C1D3D;
   font-size: 0.9rem;
 }
 
@@ -464,7 +698,7 @@ body.dark-mode .standard-section {
   position: absolute;
   top: 45%;
   transform: translateY(-50%);
-  background-color: #2F4156;
+  background-color: #852E4E;
   color: white;
   border: none;
   border-radius: 50%;
@@ -493,14 +727,14 @@ body.dark-mode .standard-section {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background: #C0D9E6;
+  background: #4C1D3D;
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
 }
 
 .rec-dots .active {
-  background: #2F4156;
+  background: #852E4E;
 }
 
 .spotify-scroll-carousel {
@@ -515,10 +749,10 @@ body.dark-mode .standard-section {
   scroll-snap-align: start;
   flex-shrink: 0;
   width: 240px;
-  background: #121212;
+  background: #ffffff;
   border-radius: 18px;
   padding: 16px;
-  color: #ffffff;
+  color: #4C1D3D;
   font-family: 'Outfit', sans-serif;
   display: flex;
   flex-direction: column;
@@ -530,8 +764,8 @@ body.dark-mode .standard-section {
 .album-frame {
   width: 100%;
   aspect-ratio: 1 / 1;
-  background-color: #1e1e1e;
-  border: 2px solid #ffffff;
+  background-color: #4C1D3D;
+  border: 2px solid #FFFFFF;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -553,7 +787,7 @@ body.dark-mode .standard-section {
 
 .track-artist {
   font-size: 0.75rem;
-  color: #b3b3b3;
+  color: #4C1D3D;
 }
 
 .progress-bar {
@@ -562,13 +796,13 @@ body.dark-mode .standard-section {
   align-items: center;
   gap: 6px;
   font-size: 0.7rem;
-  color: #b3b3b3;
+  color: #4C1D3D;
 }
 
 .bar {
   flex-grow: 1;
   height: 4px;
-  background-color: #404040;
+  background-color: #4C1D3D;
   border-radius: 2px;
   overflow: hidden;
 }
@@ -576,7 +810,7 @@ body.dark-mode .standard-section {
 .bar .fill {
   width: 30%;
   height: 100%;
-  background-color: #1db954;
+  background-color: #4C1D3D;
 }
 
 .player-buttons {
@@ -584,13 +818,45 @@ body.dark-mode .standard-section {
   justify-content: space-between;
   width: 100%;
   font-size: 1.1rem;
-  color: #b3b3b3;
+  color: #4C1D3D;
   margin-top: 10px;
 }
 
 .icon.play {
   font-size: 1.4rem;
-  color: white;
+  color: #4C1D3D;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}
+
+.box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  flex: 1 1 48%;
+  box-sizing: border-box;
+}
+.projects-card {
+  background: white;
+  border: none; /* remove the border */
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* soft shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.projects-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -627,475 +893,445 @@ body.dark-mode .standard-section {
   <header>
     <img src="profile.jpg" alt="Ananya Srinath Achar" />
     <h1>Ananya Srinath Achar</h1>
-    <p>Data Analyst | BI Engineer | ETL & Cloud Enthusiast</p>
-    <div class="cta-buttons">
-      <a href="https://drive.google.com/file/d/14RB_aBQ5-VaY4M1Q2ycZU5bEQDZGVvQ2/view?usp=sharing" target="_blank">📄 View Resume (PDF)</a>
-      <a href="https://www.linkedin.com/in/ananyaachar/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/ananyas1999" target="_blank">GitHub</a>
     </div>
   </header>
 
   
 
   <nav>
-    <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#experience">Experience</a>
-    <a href="#certifications">Certifications</a>
+    <a href="#certifications">Skills</a>
     <a href="#leadership">Leadership</a>
     <a href="#recommendations">Recommendations</a>
-    <a href="#contact">Contact</a>
   </nav>
+  <hr class="gradient-line" />  
+  <section id="about-education" style="padding: 4rem 5%; background-color: ##4C1D3D;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem; width: 100%;">
+  
+      <!-- About Me -->
+      <div style="flex: 1; min-width: 300px; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);">
+        <h2 style="margin-top: 0;">☕ <span style="font-family: 'Oswald', sans-serif;">About Me</span></h2>
+        <p>Did you know?
+          I love laundry days. That is my passion for cleaning. Cleaning everything down to a T. It’s the same satisfaction I get when I clean messy data.</p>
+        <p>My entire profile talks about my love for technology, and while that’s a big part of who I am, I want you to know I’m more than that. My zest for life spills into so many other areas: nutrition, writing, psychology, music, and everything in between. I’m endlessly curious, and I believe that exploring different passions only makes me better at what I do.</p>
+      </div>
+  
+      <!-- Education -->
+      <div style="flex: 1; min-width: 300px; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);">
+        <h2 style="margin-top: 0;">🎓 <span style="font-family: 'Oswald', sans-serif;">Education</span></h2>
+  
+       <!-- UTD card -->
+<div style="background: white; border-radius: 10px; padding: 1rem; margin-bottom: 1.5rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);">
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <img src="utdlogo.png" alt="UTD" style="width: 30px; height: 30px;">
+    <div>
+      <strong style="color: #4C1D3D;">The University of Texas at Dallas</strong><br />
+      MS in Information Technology and Management<br />
+      Aug 2023 – May 2025
+    </div>
+  </div>
+</div>
+
+  
+        <!-- VTU card -->
+        <div style="background: white; border-radius: 10px; padding: 1rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="vtulogo.png" alt="VTU" style="width: 30px; height: 30px;">
+            <div>
+              <strong style="color: #4C1D3D;">Visvesvaraya Technological University</strong><br />
+              BE in Electronics and Communication Engineering<br />
+              Aug 2017 – Jun 2021
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+</div>
+<hr class="gradient-line" />
+
+  
+<section id="projects" class="fade-in" data-aos="fade-up" style="background-color: #FFFFFF; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); padding: 2rem;">
+  <h2 style="text-align: center; color: #4C1D3D;">Projects</h2>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; margin-top: 2rem;">
+    <!-- Repeat for 8 cards -->
+    <!-- PROJECT TEMPLATE -->
+    <div onclick="openModal('modal1')" style="cursor: pointer; flex: 1 1 45%; max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+      <img src="fabric.jpg" alt="Project 1" style="width: 100%; height: auto;">
+      <div style="padding: 1.5rem;">
+        <h3 style="color: #4C1D3D; margin: 0;">Inventory Optimization & Forecasting</h3>
+        <p style="color: #852E4E; margin-top: 0.5rem; font-size: 1rem;">Forecast model for apparel brand reducing stockouts and improving procurement.</p>
+      </div>
+    </div>
+
+    <div onclick="openModal('modal2')" style="cursor: pointer; flex: 1 1 45%; max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+      <img src="warehouse.jpg" alt="Project 2" style="width: 100%; height: auto;">
+      <div style="padding: 1.5rem;">
+        <h3 style="color: #4C1D3D; margin: 0;">Supply Chain Forecasting Using SAP IBP</h3>
+        <p style="color: #852E4E; margin-top: 0.5rem; font-size: 1rem;">Optimized global supply chain using SAP IBP/APO demand planning tools.</p>
+      </div>
+    </div>
+
+    <div onclick="openModal('modal3')" style="cursor: pointer; flex: 1 1 45%; max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+      <img src="etl.jpg" alt="Project 3" style="width: 100%; height: auto;">
+      <div style="padding: 1.5rem;">
+        <h3 style="color: #4C1D3D; margin: 0;">ETL Automation with Azure Data Factory</h3>
+        <p style="color: #852E4E; margin-top: 0.5rem; font-size: 1rem;">Automated ETL pipelines using ADF, improving data ingestion speed by 60%.</p>
+      </div>
+    </div>
+
+    <div onclick="openModal('modal4')" style="cursor: pointer; flex: 1 1 45%; max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+      <img src="churn.jpg" alt="Project 4" style="width: 100%; height: auto;">
+      <div style="padding: 1.5rem;">
+        <h3 style="color: #4C1D3D; margin: 0;">Customer Churn Prediction</h3>
+        <p style="color: #852E4E; margin-top: 0.5rem; font-size: 1rem;">Built ML model to predict churn with 89% accuracy using logistic regression.</p>
+      </div>
+    </div>
+
+    <div onclick="openModal('modal5')" style="cursor: pointer; flex: 1 1 45%; max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+      <img src="mls.jpg" alt="Project 5" style="width: 100%; height: auto;">
+      <div style="padding: 1.5rem;">
+        <h3 style="color: #4C1D3D; margin: 0;">Real Estate Price Prediction</h3>
+        <p style="color: #852E4E; margin-top: 0.5rem; font-size: 1rem;">Trained regression models on MLS data to predict house prices with R² = 0.89.</p>
+      </div>
+    </div>
+
+    <div onclick="openModal('modal6')" style="cursor: pointer; flex: 1 1 45%; max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+      <img src="chatbot.jpg" alt="Project 6" style="width: 100%; height: auto;">
+      <div style="padding: 1.5rem;">
+        <h3 style="color: #4C1D3D; margin: 0;">AI Chatbot for Education Platform</h3>
+        <p style="color: #852E4E; margin-top: 0.5rem; font-size: 1rem;">Built GPT-powered chatbot using LangChain & FAISS for student Q&A.</p>
+      </div>
+    </div>
+
+    <div onclick="openModal('modal7')" style="cursor: pointer; flex: 1 1 45%; max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+      <img src="soil.jpg" alt="Project 7" style="width: 100%; height: auto;">
+      <div style="padding: 1.5rem;">
+        <h3 style="color: #4C1D3D; margin: 0;">Soil Fertility IoT Analysis</h3>
+        <p style="color: #852E4E; margin-top: 0.5rem; font-size: 1rem;">Analyzed IoT sensor data to optimize nutrient levels and boost plant growth.</p>
+      </div>
+    </div>
+
+    <div onclick="openModal('modal8')" style="cursor: pointer; flex: 1 1 45%; max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+      <img src="dashboard.jpg" alt="Project 8" style="width: 100%; height: auto;">
+      <div style="padding: 1.5rem;">
+        <h3 style="color: #4C1D3D; margin: 0;">Marketing Dashboard with Power BI</h3>
+        <p style="color: #852E4E; margin-top: 0.5rem; font-size: 1rem;">Visualized campaign KPIs & ROI, revealing a 26% performance lift post-optimization.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal Templates Below -->
+<div id="modal1" class="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:9999;">
+  <div style="background:white; margin:5% auto; padding:2rem; width:80%; border-radius:12px;">
+    <span onclick="closeModal('modal1')" style="float:right; font-size:1.5rem; cursor:pointer;">&times;</span>
+    <h2 style="color:#4C1D3D">Inventory Optimization</h2>
+    <p>Situation: Frequent stockouts in fast-moving apparel SKUs.</p>
+    <p>Action: Implemented forecasting model using Excel + Python + Power BI.</p>
+    <p>Impact: Reduced holding costs, improved stock visibility.</p>
+  </div>
+</div>
+<!-- Repeat modal2 to modal8 like above with relevant IDs and text -->
+<div id="modal1" class="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:9999;">
+  <div style="background:white; margin:5% auto; padding:2rem; width:80%; border-radius:12px;">
+    <span onclick="closeModal('modal1')" style="float:right; font-size:1.5rem; cursor:pointer;">&times;</span>
+    <h2 style="color:#4C1D3D">Inventory Optimization</h2>
+    <p>Situation: Frequent stockouts in fast-moving apparel SKUs.</p>
+    <p>Action: Implemented forecasting model using Excel + Python + Power BI.</p>
+    <p>Impact: Reduced holding costs, improved stock visibility.</p>
+  </div>
+</div>
+<div id="modal2" class="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:9999;">
+  <div style="background:white; margin:5% auto; padding:2rem; width:80%; border-radius:12px;">
+    <span onclick="closeModal('modal1')" style="float:right; font-size:1.5rem; cursor:pointer;">&times;</span>
+    <h2 style="color:#4C1D3D">Inventory Optimization</h2>
+    <p>Situation: Frequent stockouts in fast-moving apparel SKUs.</p>
+    <p>Action: Implemented forecasting model using Excel + Python + Power BI.</p>
+    <p>Impact: Reduced holding costs, improved stock visibility.</p>
+  </div>
+</div>
+<div id="modal2" class="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:9999;">
+  <div style="background:white; margin:5% auto; padding:2rem; width:80%; border-radius:12px;">
+    <span onclick="closeModal('modal2')" style="float:right; font-size:1.5rem; cursor:pointer;">&times;</span>
+    <h2 style="color:#4C1D3D">Inventory Optimization</h2>
+    <p>Situation: Frequent stockouts in fast-moving apparel SKUs.</p>
+    <p>Action: Implemented forecasting model using Excel + Python + Power BI.</p>
+    <p>Impact: Reduced holding costs, improved stock visibility.</p>
+  </div>
+</div>
+<div id="modal3" class="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:9999;">
+  <div style="background:white; margin:5% auto; padding:2rem; width:80%; border-radius:12px;">
+    <span onclick="closeModal('modal3')" style="float:right; font-size:1.5rem; cursor:pointer;">&times;</span>
+    <h2 style="color:#4C1D3D">Inventory Optimization</h2>
+    <p>Situation: Frequent stockouts in fast-moving apparel SKUs.</p>
+    <p>Action: Implemented forecasting model using Excel + Python + Power BI.</p>
+    <p>Impact: Reduced holding costs, improved stock visibility.</p>
+  </div>
+</div>
+<div id="modal4" class="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:9999;">
+  <div style="background:white; margin:5% auto; padding:2rem; width:80%; border-radius:12px;">
+    <span onclick="closeModal('modal4')" style="float:right; font-size:1.5rem; cursor:pointer;">&times;</span>
+    <h2 style="color:#4C1D3D">Inventory Optimization</h2>
+    <p>Situation: Frequent stockouts in fast-moving apparel SKUs.</p>
+    <p>Action: Implemented forecasting model using Excel + Python + Power BI.</p>
+    <p>Impact: Reduced holding costs, improved stock visibility.</p>
+  </div>
+</div>
+<div id="modal5" class="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:9999;">
+  <div style="background:white; margin:5% auto; padding:2rem; width:80%; border-radius:12px;">
+    <span onclick="closeModal('modal5')" style="float:right; font-size:1.5rem; cursor:pointer;">&times;</span>
+    <h2 style="color:#4C1D3D">Inventory Optimization</h2>
+    <p>Situation: Frequent stockouts in fast-moving apparel SKUs.</p>
+    <p>Action: Implemented forecasting model using Excel + Python + Power BI.</p>
+    <p>Impact: Reduced holding costs, improved stock visibility.</p>
+  </div>
+</div>
+<div id="modal6" class="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:9999;">
+  <div style="background:white; margin:5% auto; padding:2rem; width:80%; border-radius:12px;">
+    <span onclick="closeModal('modal6')" style="float:right; font-size:1.5rem; cursor:pointer;">&times;</span>
+    <h2 style="color:#4C1D3D">Inventory Optimization</h2>
+    <p>Situation: Frequent stockouts in fast-moving apparel SKUs.</p>
+    <p>Action: Implemented forecasting model using Excel + Python + Power BI.</p>
+    <p>Impact: Reduced holding costs, improved stock visibility.</p>
+  </div>
+
+</div>
+<div id="modal7" class="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:9999;">
+  <div style="background:white; margin:5% auto; padding:2rem; width:80%; border-radius:12px;">
+    <span onclick="closeModal('modal7')" style="float:right; font-size:1.5rem; cursor:pointer;">&times;</span>
+    <h2 style="color:#4C1D3D">Inventory Optimization</h2>
+    <p>Situation: Frequent stockouts in fast-moving apparel SKUs.</p>
+    <p>Action: Implemented forecasting model using Excel + Python + Power BI.</p>
+    <p>Impact: Reduced holding costs, improved stock visibility.</p>
+  </div>
+</div>
+<div id="modal8" class="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:9999;">
+  <div style="background:white; margin:5% auto; padding:2rem; width:80%; border-radius:12px;">
+    <span onclick="closeModal('modal8')" style="float:right; font-size:1.5rem; cursor:pointer;">&times;</span>
+    <h2 style="color:#4C1D3D">Inventory Optimization</h2>
+    <p>Situation: Frequent stockouts in fast-moving apparel SKUs.</p>
+    <p>Action: Implemented forecasting model using Excel + Python + Power BI.</p>
+    <p>Impact: Reduced holding costs, improved stock visibility.</p>
+  </div>
+</div>
+<script>
+  function openModal(id) {
+    document.getElementById(id).style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+</script>
+
+<hr class="gradient-line" />
+
+
+<section id="experience" style="background-color: #FFFFFF; padding: 2rem; border-radius: 12px;">
+  <h2 style="color: #4C1D3D; text-align: center;">Professional Experience</h2>
+
+  <div style="position: relative; margin-top: 4rem; padding: 3rem 2rem 2rem;">
+
+    <!-- Horizontal timeline line -->
+    <div style="position: absolute; top: 40px; left: 5%; right: 5%; height: 4px; background-color: #4C1D3D; z-index: 0;"></div>
+
+    <!-- Timeline horizontal cards -->
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; position: relative; z-index: 2; gap: 1rem;">
+
+      <!-- Each timeline item -->
+      <div style="text-align: center; width: 30%; min-width: 280px;">
+        <!-- Circle and date -->
+        <div style="position: relative; z-index: 2; margin-bottom: 1rem;">
+          <div style="width: 20px; height: 20px; background-color: white; border: 4px solid #852E4E; border-radius: 50%; margin: 0 auto;"></div>
+          <div style="margin-top: 0.3rem; font-weight: bold; color: #4C1D3D;">Feb 2025 – May 2025</div>
+        </div>
+        <!-- Card content -->
+        <div style="background-color: #FFFFFF; border: 1px solid #E0E0E0; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.06); color: #4C1D3D;">
+          <h3 style="margin: 0;">Nuvento Inc</h3>
+          <p style="margin: 0.2rem 0; font-weight: bold;">Software Engineer Intern</p>
+          <p style="margin-top: 0.6rem;">Worked on education data platforms, optimizing schemas, building chatbots, and automating data pipelines.</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; width: 30%; min-width: 280px;">
+        <div style="position: relative; z-index: 2; margin-bottom: 1rem;">
+          <div style="width: 20px; height: 20px; background-color: white; border: 4px solid #852E4E; border-radius: 50%; margin: 0 auto;"></div>
+          <div style="margin-top: 0.3rem; font-weight: bold; color: #4C1D3D;">Sep 2021 – Jul 2023</div>
+        </div>
+        <div style="background-color: #FFFFFF; border: 1px solid #E0E0E0; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.06); color: #4C1D3D;">
+          <h3 style="margin: 0;">Cognizant</h3>
+          <p style="margin: 0.2rem 0; font-weight: bold;">Data Analyst</p>
+          <p style="margin-top: 0.6rem;">Led analytics for a UK energy client: dashboards, ETL pipelines, churn analysis, and outage prediction boosts.</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; width: 30%; min-width: 280px;">
+        <div style="position: relative; z-index: 2; margin-bottom: 1rem;">
+          <div style="width: 20px; height: 20px; background-color: white; border: 4px solid #852E4E; border-radius: 50%; margin: 0 auto;"></div>
+          <div style="margin-top: 0.3rem; font-weight: bold; color: #4C1D3D;">Aug 2020 – Sep 2020</div>
+        </div>
+        <div style="background-color: #FFFFFF; border: 1px solid #E0E0E0; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.06); color: #4C1D3D;">
+          <h3 style="margin: 0;">Unique Tech Designs</h3>
+          <p style="margin: 0.2rem 0; font-weight: bold;">Intern</p>
+          <p style="margin-top: 0.6rem;">Analyzed IoT sensor data and diagnostic logs to improve hardware performance and data reporting.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
   
 
-  <section id="about" class="fade-in" data-aos="fade-up" style="
-  background-color: #ffffff;
+
+  
+<hr class="gradient-line" />
+  
+<section id="leadership" class="section" style="background-color: #ffffff; padding: 3rem 0;">
+  <h2 style="text-align: center; font-size: 2.5rem; font-weight: bold; color: #4C1D3D; margin-bottom: 2rem;">
+    ✨ Leadership, Creativity & Recognition
+  </h2>
+  <div style="position: relative;">
+    <button class="carousel-button prev" onclick="scrollCarousel('left')">❮</button>
+    <div class="carousel" id="leadership-carousel">
+      <div class="carousel-card">
+        <img src="images/wtm.png" alt="WTM Ambassador" class="carousel-image">
+        <h3 class="carousel-title">WTM Ambassador</h3>
+        <p class="carousel-subtitle">Google | Advocacy</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/37f4ITSlgPX81ad2EvmVQr?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="carousel-card">
+        <img src="images/author.png" alt="Author" class="carousel-image">
+        <h3 class="carousel-title">Published Author</h3>
+        <p class="carousel-subtitle">Amazon | Storytelling</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1c8gk2PeTE04A1pIDH9YMk?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="carousel-card">
+        <img src="images/utdlead.png" alt="UTD Leader" class="carousel-image">
+        <h3 class="carousel-title">UTD Student Leader</h3>
+        <p class="carousel-subtitle">UT Dallas | Leadership</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/29ZAW0BAp6O4C6fUncCjBk?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="carousel-card">
+        <img src="images/chartwells.png" alt="Chartwells" class="carousel-image">
+        <h3 class="carousel-title">Chartwells Officer</h3>
+        <p class="carousel-subtitle">UT Dallas | Student Engagement</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4nVBt6MZDDP6tRVdQTgxJg?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="carousel-card">
+        <img src="images/uandi.png" alt="U&I" class="carousel-image">
+        <h3 class="carousel-title">U&I Circle Leader</h3>
+        <p class="carousel-subtitle">Community | Volunteering</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3DamFFqW32WihKkTVlwTYQ?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="carousel-card">
+        <img src="images/ambassador.png" alt="Women Techmakers" class="carousel-image">
+        <h3 class="carousel-title">Women Techmakers</h3>
+        <p class="carousel-subtitle">Google | Advocacy</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3AJwUDP919kvQ9QcozQPxg?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="carousel-card">
+        <img src="images/research.png" alt="Research" class="carousel-image">
+        <h3 class="carousel-title">Research Presenter</h3>
+        <p class="carousel-subtitle">ICICS Conference | Springer</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7MXVkk9YMctZqd1Srtv4MB?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="carousel-card">
+        <img src="images/intern.png" alt="Intern" class="carousel-image">
+        <h3 class="carousel-title">Market Research Intern</h3>
+        <p class="carousel-subtitle">Marketing | Analysis</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0pqnGHJpmpxLKifKRmU6WP?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </div>
+    <button class="carousel-button next" onclick="scrollCarousel('right')">❯</button>
+  </div>
+</section>
+
+<style>
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 0 2rem;
+  gap: 1.5rem;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel-card {
+  flex: 0 0 280px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.carousel-image {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
-  margin-top: 20px;
-  border: 1px solid #C0D9E6;
-">
+  margin-bottom: 1rem;
+}
+.carousel-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4C1D3D;
+}
+.carousel-subtitle {
+  color: #9C2F56;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+.carousel-button {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: #741F4E;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+}
+.carousel-button.prev {
+  left: 10px;
+}
+.carousel-button.next {
+  right: 10px;
+}
+.carousel-button:hover {
+  background-color: #6a294f;
+}
+</style>
 
-
-    <h2>About Me</h2>
-    <p class="quote">"I aspire to be a data & AI leader, contributing across business lifecycles and shaping strategies that drive intelligent solutions."</p>
-    <p><strong>Data Engineer Intern</strong> at Nuvento Inc, United States<br>
-       <strong>MS - Information Technology and Management</strong> at University of Texas at Dallas<br>
-       <strong>2+ years Data Analyst </strong> at Cognizant, India<br>
-       <strong>BE - Electronics and Communication Engineering</strong> from Visvesvaraya Technological University, India</p>
-
-       <div class="tech-stack">
-        <h3>Data Analysis Toolkit</h3>
-        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-          <div class="badge">Python</div>
-          <div class="badge">R</div>
-          <div class="badge">SQL</div>
-          <div class="badge">Power BI</div>
-          <div class="badge">Tableau</div>
-          <div class="badge">Alteryx</div>
-          <div class="badge">Excel</div>
-          <div class="badge">A/B Testing</div>
-          <div class="badge">Advanced Statistics</div>
-          <div class="badge">Data Cleaning</div>
-          <div class="badge">Data Visualization</div>
-          <div class="badge">Insight Storytelling</div>
-          <div class="badge">Azure</div>
-          <div class="badge">AWS</div>
-          <div class="badge">ML (Scikit-learn)</div>
-          <div class="badge">NLP</div>
-        </div>
-      </div>
-      
-      <div class="tech-stack">
-        <h3>Data Engineering Stack</h3>
-        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-          <div class="badge">Azure</div>
-          <div class="badge">AWS (S3, Redshift)</div>
-          <div class="badge">Snowflake</div>
-          <div class="badge">ETL</div>
-          <div class="badge">Databricks</div>
-          <div class="badge">Hadoop</div>
-          <div class="badge">Git</div>
-          <div class="badge">PowerApps</div>
-          <div class="badge">Informatica</div>
-          <div class="badge">Cognos</div>
-          <div class="badge">Data Warehousing</div>
-          <div class="badge">Pipeline Automation</div>
-        </div>
-      </div>
-      
-  </section>
-
-  <div style="height: 2px; width: 80%; margin: 3rem auto; background: linear-gradient(to right, #C0D9E6, #ffffff, #C0D9E6);"></div>
-
-  <section class="aspirations standard-section" style="background-color: #2F4156; color: #C0D9E6; text-align: center;">
-
-    <h2 style="margin-top: 0;">Aspirations</h2>
-    <p style="font-size: 1.05rem; line-height: 1.8;">
-      My goal is to make a meaningful difference in the world by using my creativity and intuition to solve real-life problems. I love exploring new ideas, connecting the dots in unexpected ways, and bringing thoughtful change wherever I can.
-      <br><br>
-      I truly believe that even the smallest actions can create a ripple effect — and I want to be someone who sparks those ripples, one step at a time.
-    </p>
-  </section>
-  
-  <div style="height: 2px; width: 80%; margin: 3rem auto; background: linear-gradient(to right, #C0D9E6, #ffffff, #C0D9E6);"></div>
-
-
-  <section id="learning" class="standard-section" data-aos="fade-up">
-
-    <h2 style="color: #567C8D;">What I'm Learning Right Now 🚀</h2>
-    <p style="font-style: italic; color: #2F4156;">"Always in learning mode — here’s what’s keeping my brain busy lately:"</p>
-    <ul style="list-style-type: '📘 '; padding-left: 1.5rem; font-size: 1.05rem; line-height: 1.6;">
-      <li><strong>Generative AI:</strong> Experimenting with prompts, use cases, and LLM-powered tools</li>
-      <li><strong>Chatbot Building:</strong> Piecing together flows and integrating with real-time data</li>
-      <li><strong>New Data Engineering Tools:</strong> There’s <em>always</em> one more! Diving into Airflow, Snowflake, and whatever else shows up in my feed 😅</li>
-    </ul>
-  </section>
-  
-  <div style="height: 2px; width: 80%; margin: 3rem auto; background: linear-gradient(to right, #C0D9E6, #ffffff, #C0D9E6);"></div>
+<script>
+function scrollCarousel(direction) {
+  const carousel = document.getElementById('leadership-carousel');
+  const scrollAmount = 300;
+  if (direction === 'left') {
+    carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  } else {
+    carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  }
+}
+</script>
 
   
+<hr class="gradient-line" />
 
-  <section id="projects" class="fade-in" data-aos="fade-up" style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); padding: 2rem;">
-    <h2 style="text-align: center; color: #567C8D;">Project Highlights</h2>
-  
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 2rem;">
-      
-      <!-- OCD -->
-      <div style="flex: 1 1 300px; max-width: 350px; background-color: #FAFAFA; border: 1px solid #C0D9E6; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); padding: 1rem; text-align: center;">
-        <img src="ocd-visual.png" alt="OCD" style="width: 70px; height: 70px; border-radius: 10px; margin-bottom: 1rem;">
-        <h4>OCD Behavioral Insights (SQL + Tableau)</h4>
-        <p style="font-size: 0.95rem;">Analyzed YBOCS scores and behavioral loops using SQL & Tableau to identify high-risk OCD sufferers.</p>
-        <a href="https://github.com/ananyas1999/OCD--Tableau-and-SQL" target="_blank" style="color: #2F4156; font-weight: bold;">🔗 View on GitHub</a>
-      </div>
-  
-      <!-- Cirrhosis -->
-      <div style="flex: 1 1 300px; max-width: 350px; background-color: #FAFAFA; border: 1px solid #C0D9E6; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); padding: 1rem; text-align: center;">
-        <img src="disease.png" alt="Cirrhosis" style="width: 70px; height: 70px; border-radius: 10px; margin-bottom: 1rem;">
-        <h4>Cirrhosis Outcome Prediction (ML + Databricks)</h4>
-        <p style="font-size: 0.95rem;">Trained a classifier on 10,000+ liver patient records, optimized performance, and logged using MLflow.</p>
-        <a href="https://github.com/ananyas1999/cirrhosis_outcome_prediction" target="_blank" style="color: #2F4156; font-weight: bold;">🔗 View on GitHub</a>
-      </div>
-  
-      <!-- AI Case Study -->
-      <div style="flex: 1 1 300px; max-width: 350px; background-color: #FAFAFA; border: 1px solid #C0D9E6; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); padding: 1rem; text-align: center;">
-        <img src="robot.jpg" alt="AI" style="width: 70px; height: 70px; border-radius: 10px; margin-bottom: 1rem;">
-        <h4>Age of Artificial Intelligence (Case Study)</h4>
-        <p style="font-size: 0.95rem;">Built a conversational AI simulation using NLP + topic-based logic focused on storytelling evolution.</p>
-        <a href="https://github.com/ananyas1999/Age-of-Artificial-Intelligence-" target="_blank" style="color: #2F4156; font-weight: bold;">🔗 View on GitHub</a>
-      </div>
-  
-      <!-- Azure Platform -->
-      <div style="flex: 1 1 300px; max-width: 350px; background-color: #FAFAFA; border: 1px solid #C0D9E6; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); padding: 1rem; text-align: center;">
-        <img src="meddggenius.jpg" alt="Azure" style="width: 70px; height: 70px; border-radius: 10px; margin-bottom: 1rem;">
-        <h4>Cloud Data Platform (Azure, Data Engineering)</h4>
-        <p style="font-size: 0.95rem;">Built a secure Azure-based data platform for MeddGGenius to support scalable ingestion and reporting.</p>
-        <a href="https://github.com/ananyas1999/Building-a-Scalable-and-Secure-Cloud-Data-Platform-for-MeddGGenius-Using-Azure" target="_blank" style="color: #2F4156; font-weight: bold;">🔗 View on GitHub</a>
-      </div>
-  
-      <!-- Fleet Analysis -->
-      <div style="flex: 1 1 300px; max-width: 350px; background-color: #FAFAFA; border: 1px solid #C0D9E6; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); padding: 1rem; text-align: center;">
-        <img src="fleet.jpg" alt="Fleet" style="width: 70px; height: 70px; border-radius: 10px; margin-bottom: 1rem;">
-        <h4>Truck Fleet Optimization (Big Data, Hadoop)</h4>
-        <p style="font-size: 0.95rem;">Analyzed inefficiencies in logistics using Hadoop for fuel optimization and predictive maintenance.</p>
-        <a href="https://docs.google.com/presentation/d/1yCGl6CpeZZVLJe9W3PgYkLYxJhd9g2k2/edit?usp=sharing&ouid=104700588996787652759&rtpof=true&sd=true" target="_blank" style="color: #2F4156; font-weight: bold;">🔗 View Slide Deck</a>
-      </div>
-  
-      <!-- Deep Work Book Critique -->
-<div style="flex: 1 1 300px; max-width: 350px; background-color: #FAFAFA; border: 1px solid #C0D9E6; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); padding: 1rem; text-align: center;">
-  <img src="deepwork.jpg" alt="Deep Work" style="width: 70px; height: 70px; border-radius: 10px; margin-bottom: 1rem;">
-  <h4>Deep Work: Productivity & Focus (Book Critique)</h4>
-  <p style="font-size: 0.95rem;">Critically explored Cal Newport’s Deep Work concepts with a visual walkthrough, mapping personal reflection and digital distractions into actionable strategies.</p>
-  <a href="https://github.com/ananyas1999/Deep-work-Book-Critique/tree/main" target="_blank" style="color: #2F4156; font-weight: bold;">🔗 View on GitHub</a>
-</div>
+  <section id="recommendations" data-aos="fade-up" style="width: 100vw; padding: 4rem 0; background-color: #ffffff; text-align: center; overflow-x: hidden;">
 
-    </div>
-  </section>
-  
-<div style="height: 2px; width: 80%; margin: 3rem auto; background: linear-gradient(to right, #C0D9E6, #ffffff, #C0D9E6);"></div>
-<section id="education" class="standard-section" data-aos="fade-up" style="padding: 1.5rem;">
-  <h2 style="text-align: center; color: #567C8D; margin-bottom: 1.5rem;">Education</h2>
-  <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center;">
-
-    <!-- UTD Card -->
-    <div style="flex: 1 1 320px; background: #FAFAFA; border: 1px solid #C0D9E6; border-left: 6px solid #2F4156; border-radius: 12px; padding: 1.2rem; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
-      <h3 style="margin: 0;">The University of Texas at Dallas</h3>
-      <p style="margin: 0.3rem 0; font-weight: bold;">MS in Information Technology and Management</p>
-      <p style="font-size: 0.9rem; color: #567C8D;">Graduated May 2025</p>
-      <p style="font-size: 0.88rem; color: #2F4156;">Relevant Courses: Python, Big Data, Cloud, Visualization, Warehousing, Statistics</p>
-    </div>
-
-    <!-- VTU Card -->
-    <div style="flex: 1 1 320px; background: #FAFAFA; border: 1px solid #C0D9E6; border-left: 6px solid #2F4156; border-radius: 12px; padding: 1.2rem; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
-      <h3 style="margin: 0;">JSS Academy of Technical Education, Bangalore</h3>
-      <p style="margin: 0.3rem 0; font-weight: bold;">BE in Electronics and Communication Engineering</p>
-      <p style="font-size: 0.9rem; color: #567C8D;">Graduated June 2021</p>
-    </div>
-
-  </div>
-</section>
-
-<div style="height: 2px; width: 80%; margin: 3rem auto; background: linear-gradient(to right, #C0D9E6, #ffffff, #C0D9E6);"></div>
-
-
-<section id="experience" data-aos="fade-up" style="background-color: #ffffff; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">
-  <h2 style="color: #567C8D; text-align: center;">Professional Experience</h2>
-
-  <div style="position: relative; margin-top: 2.5rem; padding-left: 2rem;">
-
-    <div style="position: absolute; left: 50%; top: 0; bottom: 0; width: 4px; background-color: #C0D9E6; transform: translateX(-50%);"></div>
-
-    <!-- Job 1 -->
-    <div style="position: relative; width: 100%; display: flex; justify-content: flex-start; margin-bottom: 3rem;">
-      <div style="background-color: #FAFAFA; border-left: 8px solid #2F4156; padding: 1.5rem 2rem; border-radius: 12px; width: 48%; box-shadow: 0 2px 8px rgba(0,0,0,0.06); z-index: 1;">
-        <h3 style="margin: 0;">Nuvento Inc</h3>
-        <p style="margin: 0.2rem 0; font-weight: bold;">Software Engineer Intern (Feb 2025 – May 2025)</p>
-        <p style="margin-top: 0.6rem;">Worked on education data platforms, optimizing schemas, building chatbots, and automating data pipelines for real-time insights.</p>
-      </div>
-    </div>
-
-    <div style="position: absolute; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; background-color: white; border: 4px solid #2F4156; border-radius: 50%;"></div>
-
-   <!-- Merged Cognizant Job -->
-<div style="position: relative; width: 100%; display: flex; justify-content: flex-end; margin-bottom: 3rem;">
-  <div style="background-color: #FAFAFA; border-right: 8px solid #2F4156; padding: 1.5rem 2rem; border-radius: 12px; width: 48%; box-shadow: 0 2px 8px rgba(0,0,0,0.06); z-index: 1;">
-    <h3 style="margin: 0;">Cognizant Technology Solutions, India</h3>
-    <p style="margin: 0.2rem 0; font-weight: bold;">Data Analyst (Jul 2021 – Jul 2023)</p>
-    <p style="margin-top: 0.6rem;">
-      Led analytics projects for a UK-based energy client by building KPI dashboards, optimizing ETL pipelines using Databricks and Hadoop, and automating Power BI reports via Power Automate—saving 12+ hours weekly. Delivered insights from SQL, Python, and Excel-based churn analysis and time-series forecasting, boosting outage prediction accuracy by 28%.
-    </p>
-  </div>
-</div>
-
-<div style="position: absolute; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; background-color: white; border: 4px solid #2F4156; border-radius: 50%;"></div>
-    <!-- Job 4 -->
-    <div style="position: relative; width: 100%; display: flex; justify-content: flex-end;">
-      <div style="background-color: #FAFAFA; border-right: 8px solid #2F4156; padding: 1.5rem 2rem; border-radius: 12px; width: 48%; box-shadow: 0 2px 8px rgba(0,0,0,0.06); z-index: 1;">
-        <h3 style="margin: 0;">Unique Tech Designs</h3>
-        <p style="margin: 0.2rem 0; font-weight: bold;">Data Analyst Intern (Aug 2020 – Sep 2020)</p>
-        <p style="margin-top: 0.6rem;">Worked with IoT sensor data and diagnostic logs to improve hardware usability and analytics reporting.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-  
-  <div style="height: 2px; width: 80%; margin: 3rem auto; background: linear-gradient(to right, #C0D9E6, #ffffff, #C0D9E6);"></div>
-
-  
-  <section id="certifications" class="standard-section" style="text-align: center;">
-    <h2 style="color: #567C8D;">🎓 Main Certifications</h2>
-  
-    <div class="cert-grid">
-  
-      <!-- Azure DP-900 -->
-      <div class="cert-booklet">
-        <img src="azure_dp900_badge.png" class="cert-logo" alt="Azure Badge">
-        <div style="text-align: left;">
-          <h3>Microsoft Azure Data Fundamentals (DP-900)</h3>
-          <p class="cert-org">Microsoft</p>
-          <p class="cert-validity">
-            <a href="https://drive.google.com/file/d/1Ql0oliGglL5ZiiuOxR64ii1934Z3ANrD/view?usp=sharing" target="_blank">📄 View Certificate</a><br>
-            <a href="https://www.credly.com/badges/12a67a76-8e22-43b0-9fa5-41cd8dab6543/public_url" target="_blank">🔗 Verify on Credly</a>
-          </p>
-        </div>
-      </div>
-  
-      <!-- AWS Cloud Practitioner -->
-      <div class="cert-booklet">
-        <img src="aws_cloud_practitioner_badge.png" class="cert-logo" alt="AWS Badge">
-        <div style="text-align: left;">
-          <h3>AWS Certified Cloud Practitioner</h3>
-          <p class="cert-org">Amazon Web Services</p>
-          <p class="cert-validity">
-            <a href="https://drive.google.com/file/d/1liAj7EUS1FXXxFq0lWywp2u3ZHS7lWpb/view?usp=sharing" target="_blank">📄 View Certificate</a><br>
-            <a href="https://www.credly.com/badges/37073b63-89ea-4e49-bd0c-f3ae8516e596/public_url" target="_blank">🔗 Verify on Credly</a>
-          </p>
-        </div>
-      </div>
-  
-      <!-- ✅ FIXED: Snowflake card now inside .cert-grid -->
-      <div class="cert-booklet">
-        <img src="snowpro_associate_platform_badge.png" class="cert-logo" alt="Snowflake Associate Platform Badge">
-        <div style="text-align: left;">
-          <h3>SnowPro Associate: Platform</h3>
-          <p class="cert-org">Snowflake</p>
-          <p class="cert-validity">
-            Issued: June 14, 2025<br>
-            Expires: June 14, 2027<br>
-            Certification ID: S98844-250614-SOL25<br>
-            <a href="https://drive.google.com/file/d/1wzoqxYMHmqQ0SiTXZwY_Is1jbLQaXnTl/view?usp=sharing" target="_blank">📄 View Certificate</a><br>
-            <a href="https://achieve.snowflake.com/c5b5f44c-e6b9-461f-8903-8012253fc8e4#acc.NBdpK1nt" target="_blank">🔗 Verify on Snowflake</a>
-          </p>
-        </div>
-      </div>
-  
-    </div>
-  </section>
-  
-  
-  <div style="height: 2px; width: 80%; margin: 3rem auto; background: linear-gradient(to right, #C0D9E6, #ffffff, #C0D9E6);"></div>
-  
-  <section class="standard-section" style="text-align: center;">
-    <h2 style="color: #567C8D;">🎖️ Additional Badges</h2>
-  
-    <div class="cert-grid" style="margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center;">
-  
-      <!-- Badge 1: Alteryx Designer Core -->
-      <a href="https://www.credly.com/badges/1d6f7d98-747a-4ed1-9d68-cfdc76fe23c1/public_url" target="_blank">
-        <img src="badge1.png" alt="Alteryx Designer Core" style="width: 120px; border-radius: 12px;">
-      </a>
-  
-      <!-- Badge 2: KNIME L1 -->
-      <a href="https://www.credly.com/badges/6cf9df19-316d-44a0-9471-e2dceb8d8d1b/public_url" target="_blank">
-        <img src="badge2.png" alt="KNIME L1" style="width: 120px; border-radius: 12px;">
-      </a>
-  
-      <!-- Badge 3: Alteryx Foundation -->
-      <a href="https://www.credly.com/badges/d2da61e1-5a33-4e65-8349-5b737ed55ef9/public_url" target="_blank">
-        <img src="badge3.png" alt="Alteryx Foundation" style="width: 120px; border-radius: 12px;">
-      </a>
-  
-    </div>
-  </section>
-  
-  
-  
-  <div style="height: 2px; width: 80%; margin: 3rem auto; background: linear-gradient(to right, #C0D9E6, #ffffff, #C0D9E6);"></div>
-  
-
-  <!-- Spotify-Style Leadership Carousel Section -->
-<section id="leadership" class="standard-section" style="text-align: center;">
-  <h2 style="font-size: 2rem; color: #2F4156; margin-bottom: 2rem;">✨ Leadership, Creativity & Recognition</h2>
-
-  <div class="spotify-scroll-carousel">
-
-    <!-- Card 1 -->
-    <div class="spotify-nowplaying-card">
-      <div class="album-frame">
-        <img src="wtm.jpg" alt="WTM Ambassador">
-      </div>
-      <div class="controls">
-        <div class="track-info">
-          <div class="track-title">WTM Ambassador</div>
-          <div class="track-artist">Google | Advocacy</div>
-        </div>
-        <div class="progress-bar">
-          <span>0:00</span>
-          <div class="bar">
-            <div class="fill"></div>
-          </div>
-          <span>3:14</span>
-        </div>
-        <div class="player-buttons">
-          <i class="icon">🔀</i>
-          <i class="icon">⏮️</i>
-          <i class="icon play">▶️</i>
-          <i class="icon">⏭️</i>
-          <i class="icon">🔁</i>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="spotify-nowplaying-card">
-      <div class="album-frame">
-        <img src="author.jpg" alt="Published Author">
-      </div>
-      <div class="controls">
-        <div class="track-info">
-          <div class="track-title">Published Author</div>
-          <div class="track-artist">Amazon | Storytelling</div>
-        </div>
-        <div class="progress-bar">
-          <span>0:00</span>
-          <div class="bar">
-            <div class="fill"></div>
-          </div>
-          <span>2:45</span>
-        </div>
-        <div class="player-buttons">
-          <i class="icon">🔀</i>
-          <i class="icon">⏮️</i>
-          <i class="icon play">▶️</i>
-          <i class="icon">⏭️</i>
-          <i class="icon">🔁</i>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="spotify-nowplaying-card">
-      <div class="album-frame">
-        <img src="utd-leadership.jpg" alt="UTD Leader">
-      </div>
-      <div class="controls">
-        <div class="track-info">
-          <div class="track-title">UTD Student Leader</div>
-          <div class="track-artist">UT Dallas | Leadership</div>
-        </div>
-        <div class="progress-bar">
-          <span>0:00</span>
-          <div class="bar">
-            <div class="fill"></div>
-          </div>
-          <span>3:05</span>
-        </div>
-        <div class="player-buttons">
-          <i class="icon">🔀</i>
-          <i class="icon">⏮️</i>
-          <i class="icon play">▶️</i>
-          <i class="icon">⏭️</i>
-          <i class="icon">🔁</i>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="spotify-nowplaying-card">
-      <div class="album-frame">
-        <img src="springer.jpg" alt="Researcher">
-      </div>
-      <div class="controls">
-        <div class="track-info">
-          <div class="track-title">Springer Researcher</div>
-          <div class="track-artist">Smart Systems | ICICS</div>
-        </div>
-        <div class="progress-bar">
-          <span>0:00</span>
-          <div class="bar">
-            <div class="fill"></div>
-          </div>
-          <span>2:59</span>
-        </div>
-        <div class="player-buttons">
-          <i class="icon">🔀</i>
-          <i class="icon">⏮️</i>
-          <i class="icon play">▶️</i>
-          <i class="icon">⏭️</i>
-          <i class="icon">🔁</i>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 5 -->
-    <div class="spotify-nowplaying-card">
-      <div class="album-frame">
-        <img src="uandi.jpg" alt="U&I Leader">
-      </div>
-      <div class="controls">
-        <div class="track-info">
-          <div class="track-title">Circle Leader – U&I</div>
-          <div class="track-artist">NGO | Education</div>
-        </div>
-        <div class="progress-bar">
-          <span>0:00</span>
-          <div class="bar">
-            <div class="fill"></div>
-          </div>
-          <span>3:22</span>
-        </div>
-        <div class="player-buttons">
-          <i class="icon">🔀</i>
-          <i class="icon">⏮️</i>
-          <i class="icon play">▶️</i>
-          <i class="icon">⏭️</i>
-          <i class="icon">🔁</i>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-  
-  
-  <div style="height: 2px; width: 80%; margin: 3rem auto; background: linear-gradient(to right, #C0D9E6, #ffffff, #C0D9E6);"></div>
-
-
-  <section id="recommendations" data-aos="fade-up" class="standard-section" style="text-align: center;">
-    <h2 style="color: #567C8D; margin-bottom: 2rem;">🌟 Recommendations</h2>
+    <h2 style="color: #4C1D3D; margin-bottom: 2rem;">What People Say About Me</h2>
   
     <div class="rec-carousel">
       <div class="rec-track">
@@ -1195,20 +1431,35 @@ body.dark-mode .standard-section {
   </section>
   
   
-  <div style="height: 2px; width: 80%; margin: 3rem auto; background: linear-gradient(to right, #C0D9E6, #ffffff, #C0D9E6);"></div>
+  <hr class="gradient-line" />
 
 
+  <section id="contact" data-aos="fade-up" style="background-color: #FFFFFF; padding: 3rem 1rem; text-align: center; max-width: 900px; margin: 2rem auto;">
+    <h2 style="color: #4C1D3D; font-weight: 800; font-size: 2.2rem;">Let's Connect!</h2>
+    <p style="color: #852E4E; font-size: 1.2rem; margin: 1rem 0 2rem;">
+      Whether it’s data, dashboards, or just good coffee, I’d love to hear from you.
 
-  <section id="contact" data-aos="fade-up" style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); padding: 2rem; max-width: 900px; margin: 2rem auto;">
-    <h2 style="color: #567C8D;">📬 Contact Me</h2>
-    <p style="font-size: 1.1rem; margin-bottom: 1rem;">
-      I'm always happy to connect! Feel free to reach out via email or phone.
     </p>
-    <div style="background-color: #F4F9FB; padding: 1rem 1.5rem; border-left: 6px solid #2F4156; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.05);">
-      <p style="margin: 0.5rem 0;"><strong>Email:</strong> <a href="mailto:ananya.achar82@gmail.com" style="color: #2F4156; font-weight: bold; text-decoration: underline;">ananya.achar82@gmail.com</a></p>
-      <p style="margin: 0.5rem 0;"><strong>Phone:</strong> (945) 527-4967</p>
+  
+    <!-- Social Icons -->
+    <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem;">
+      <a href="https://www.linkedin.com/in/ananyaachar/" target="_blank" style="color: #4C1D3D; font-size: 1.8rem; text-decoration: none;">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:ananya.achar82@gmail.com" style="color: #4C1D3D; font-size: 1.8rem; text-decoration: none;">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  
+    <!-- Contact Info -->
+    <div style="display: flex; flex-direction: column; gap: 1.2rem; align-items: center; font-size: 1.1rem; color: #4C1D3D;">
+      <div>
+       
+      </div>
     </div>
   </section>
+  
+  
   
 
   <footer>
@@ -1226,7 +1477,7 @@ body.dark-mode .standard-section {
   
     fadeEls.forEach(el => observer.observe(el));
   </script>
-<a href="#top" id="backToTop" style="display:none;position:fixed;bottom:30px;right:20px;background-color:#567C8D;color:white;padding:10px 15px;border-radius:50%;text-decoration:none;font-weight:bold;font-size:18px;">↑</a>
+<a href="#top" id="backToTop" style="display:none;position:fixed;bottom:30px;right:20px;background-color:#4C1D3D;color:white;padding:10px 15px;border-radius:50%;text-decoration:none;font-weight:bold;font-size:18px;">↑</a>
 
 <script>
   const backToTop = document.getElementById('backToTop');
