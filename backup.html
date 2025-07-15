@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-35D09ZJ5JK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-35D09ZJ5JK');
+</script>
+  <style>
+    .fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+  
+}
+
+
+  </style>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ananya Srinath Achar | Portfolio</title>
+  <link rel="icon" type="image/png" href="cutelogo.png"/>
+  
+  <style>
+.standard-section {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  width: 90%;
+  border: 1px solid #C0D9E6;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Adjust if your navbar height changes */
+}
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      
+  font-family: 'Outfit', sans-serif;
+
+
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: aliceblue;
+      color: #2F4156;
+    }
+
+    header {
+      header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%; width: 100%;
+  background-color: rgba(0,0,0,0.3);
+  backdrop-filter: blur(2px);
+  z-index: 0;
+}
+header * {
+  position: relative;
+  z-index: 1;
+}
+header {
+  position: relative;
+}
+
+      background-image: url('image.png');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 3rem 1rem 2rem 1rem;
+      color: white;
+    }
+
+    header img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 5px solid white;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .cta-buttons a:hover {
+  background-color: #f3accb;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+
+.cta-buttons a {
+  background-color: #F8C8DC;   /* Soft pink */
+  color: white;                /* White text */
+  padding: 0.9rem 1.6rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  outline: 2px solid #F8C8DC;
+  outline-offset: -5px;
+}
+
+.cert-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F4F9FB;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border-left: 6px solid #2F4156;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  color: #2F4156;
+}
+
+.cert-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+.cert-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.cert-org {
+  font-size: 0.9rem;
+  color: #567C8D;
+  margin: 0.2rem 0 0;
+}
+
+.cert-link {
+  font-weight: bold;
+  color: #2F4156;
+  font-size: 1rem;
+}
+
+.card, .rec-card.small, .cert-card {
+  width: 100%;
+  max-width: 860px;
+  margin: auto;
+}
+
+
+    nav {
+  background-color: #C3DCEB;  /* light blue from your screenshot */
+  text-align: center;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  <button onclick="toggleTheme()" style="float:right; margin-right: 20px; padding: 6px 10px; border-radius: 8px;">🌓</button>
+
+}
+
+
+nav a {
+  background-color: #2F4156;        /* dark blue */
+  color: #C3DCEB;                   /* light blue text */
+  padding: 10px 20px;
+  margin: 0 0.5rem;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;                     /* remove default border */
+  outline: 3px solid #C3DCEB;       /* single light blue outline */
+  outline-offset: -6px;             /* brings it slightly inside */
+  display: inline-block;
+}
+
+
+
+
+
+
+nav a:hover {
+  background-color: #3B4F68;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+
+section {
+  max-width: 900px;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+
+    h2 {
+      color: #567C8D;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #2F4156;
+      border-left: 4px solid #567C8D;
+      padding-left: 1rem;
+      margin: 1rem 0;
+    }
+
+    .tech-stack {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-top: 2rem;
+      box-shadow: 1px 2px 4px 2px #C0D9E6;
+    }
+
+    .aspiration {
+  background-color: #2F4156;
+  color: #C0D9E6;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 2rem;
+  max-width: 900px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  border: 1px solid #C0D9E6;
+}
+.badge {
+  background-color: #EAF2F8;
+  color: #2F4156;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+
+    footer {
+      text-align: center;
+      background-color: #2F4156;
+      color: #C0D9E6;
+      padding: 1rem;
+      margin-top: 3rem;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      .cta-buttons a {
+        display: block;
+        margin: 0.5rem auto;
+      }
+
+      header {
+        padding: 2rem 1rem;
+      }
+    }
+    nav a.active {
+  color: #ffffff;
+  background-color: #567C8D;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+.cta-buttons a {
+  background-color: #C3DCEB;
+  color: #2F4156;
+  padding: 0.9rem 1.6rem; /* more padding to give space inside */
+  margin: 0.5rem;
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  outline: 2px solid #2F4156;      /* dark blue border */
+  outline-offset: -6px;            /* pulls the border inside */
+}
+
+
+
+.cta-buttons a:hover {
+  background-color: #B0D1E3;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+nav a.active {
+  background-color: #C0D9E6 !important;
+  color: #2F4156 !important;
+  box-shadow: 0 0 0 2px #2F4156 inset;
+}
+
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.cert-booklet {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem;
+  width: 100%;
+  max-width: 500px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 6px solid #2F4156;
+}
+
+.cert-booklet:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.cert-logo {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #f8f8f8;
+  padding: 0.4rem;
+}
+
+.cert-booklet h3 {
+  margin: 0;
+  color: #2F4156;
+  font-size: 1.1rem;
+}
+
+.cert-org {
+  margin: 0.4rem 0 0.2rem;
+  color: #567C8D;
+  font-size: 0.9rem;
+}
+
+.cert-validity {
+  font-size: 0.85rem;
+  color: #7B9CAF;
+}
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode nav {
+  background: rgba(30, 30, 30, 0.8);
+}
+
+body.dark-mode .standard-section {
+  background: #2b2b2b;
+  color: #fff;
+}
+
+.rec-carousel {
+  position: relative;
+  max-width: 900px;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+.rec-track {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.rec-card.small {
+  min-width: 100%;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 1.8rem 1.2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.rec-dp {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.rec-card blockquote {
+  font-style: italic;
+  color: #2F4156;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  margin: 0.4rem 0;
+}
+
+.rec-card h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  color: #2F4156;
+  font-size: 1rem;
+}
+
+.rec-title {
+  color: #567C8D;
+  font-size: 0.9rem;
+}
+
+.rec-btn {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background-color: #2F4156;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rec-btn.prev {
+  left: 10px;
+}
+
+.rec-btn.next {
+  right: 10px;
+}
+
+.rec-dots {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.rec-dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #C0D9E6;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.rec-dots .active {
+  background: #2F4156;
+}
+
+.spotify-scroll-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.spotify-nowplaying-card {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 240px;
+  background: #121212;
+  border-radius: 18px;
+  padding: 16px;
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.album-frame {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #1e1e1e;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.album-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.track-info {
+  text-align: center;
+}
+
+.track-title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.track-artist {
+  font-size: 0.75rem;
+  color: #b3b3b3;
+}
+
+.progress-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.7rem;
+  color: #b3b3b3;
+}
+
+.bar {
+  flex-grow: 1;
+  height: 4px;
+  background-color: #404040;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.bar .fill {
+  width: 30%;
+  height: 100%;
+  background-color: #1db954;
+}
+
+.player-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.1rem;
+  color: #b3b3b3;
+  margin-top: 10px;
+}
+
+.icon.play {
+  font-size: 1.4rem;
+  color: white;
+}
+
+
+
+  </style>
+</head>
+<script>
+  window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav a');
+
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      if (pageYOffset >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').includes(current)) {
+        link.classList.add('active');
+      }
+    });
+  });
+  function toggleTheme() {
+  document.body.classList.toggle('dark-mode');
+}
+
+</script>
+
+<body>
+  <header>
+    <img src="profile.jpg" alt="Ananya Srinath Achar" />
+    <h1>Ananya Srinath Achar</h1>
+    </div>
+  </header>
+
+  
+
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#certifications">Skills</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#recommendations">Recommendations</a>
+  </nav>
+  
+
+  <section id="about" class="fade-in" data-aos="fade-up" style="
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  margin-top: 20px;
+  border: 1px solid #C0D9E6;
+">
+
+
+    <h2>About Me</h2>
+    <p class="quote">"I aspire to be a data & AI leader, contributing across business lifecycles and shaping strategies that drive intelligent solutions."</p>
+    <p><strong>Data Engineer Intern</strong> at Nuvento Inc, United States<br>
+       <strong>MS - Information Technology and Management</strong> at University of Texas at Dallas<br>
+       <strong>2+ years Data Analyst </strong> at Cognizant, India<br>
+       <strong>BE - Electronics and Communication Engineering</strong> from JSS Academy of Technical Education, India</p>
+
+       <div class="tech-stack">
+        <h3>Data Analysis Toolkit</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <div class="badge">Python</div>
+          <div class="badge">R</div>
+          <div class="badge">SQL</div>
+          <div class="badge">Power BI</div>
+          <div class="badge">Tableau</div>
+          <div class="badge">Alteryx</div>
+          <div class="badge">Excel</div>
+          <div class="badge">A/B Testing</div>
+          <div class="badge">Advanced Statistics</div>
+          <div class="badge">Data Cleaning</div>
+          <div class="badge">Data Visualization</div>
+          <div class="badge">Insight Storytelling</div>
+          <div class="badge">Azure</div>
+          <div class="badge">AWS</div>
+          <div class="badge">ML (Scikit-learn)</div>
+          <div class="badge">NLP</div>
+        </div>
+      </div>
+      
+      <div class="tech-stack">
+        <h3>Data Engineering Stack</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <div class="badge">Azure</div>
+          <div class="badge">AWS (S3, Redshift)</div>
+          <div class="badge">Snowflake</div>
+          <div class="badge">ETL</div>
+          <div class="badge">Databricks</div>
+          <div class="badge">Hadoop</div>
+          <div class="badge">Git</div>
+          <div class="badge">PowerApps</div>
+          <div class="badge">Informatica</div>
+          <div class="badge">Cognos</div>
+          <div class="badge">Data Warehousing</div>
+          <div class="badge">Pipeline Automation</div>
+        </div>
+      </div>
+      
+  </section>
+
+  <div style="height: 2px; width: 80%; margin: 3rem auto; background: linear-gradient(to right, #C0D9E6, #ffffff, #C0D9E6);"></div>
+
+  <section class="aspirations standard-section" style="background-color: #2F4156; color: #C0D9E6; text-align: center;">
+
+    <h2 style="margin-top: 0;">Aspirations</h2>
+    <p style="font-size: 1.05rem; line-height: 1.8;">
+      My goal is to make a meaningful difference in the world by using my creativity and intuition to solve real-life problems. I love exploring new ideas, connecting the dots in unexpected ways, and bringing thoughtful change wherever I can.
+      <br><br>
+      I truly believe that even the smallest actions can create a ripple effect — and I want to be someone who sparks those ripples, one step at a time.
+    </p>
+  </section>
+  
+  <div style="height: 2px; width: 80%; margin: 3rem auto; background: linear-gradient(to right, #C0D9E6, #ffffff, #C0D9E6);"></div>
+
+
+  <section id="learning" class="standard-section" data-aos="fade-up">
+
+    <h2 style="color: #567C8D;">What I'm Learning Right Now 🚀</h2>
+    <p style="font-style: italic; color: #2F4156;">"Always in learning mode — here’s what’s keeping my brain busy lately:"</p>
+    <ul style="list-style-type: '📘 '; padding-left: 1.5rem; font-size: 1.05rem; line-height: 1.6;">
+      <li><strong>Generative AI:</strong> Experimenting with prompts, use cases, and LLM-powered tools</li>
+      <li><strong>Chatbot Building:</strong> Piecing together flows and integrating with real-time data</li>
+      <li><strong>New Data Engineering Tools:</strong> There’s <em>always</em> one more! Diving into Airflow, Snowflake, and whatever else shows up in my feed 😅</li>
+    </ul>
+  </section>
+  
+  <div style="height: 2px; width: 80%; margin: 3rem auto; background: linear-gradient(to right, #C0D9E6, #ffffff, #C0D9E6);"></div>
+
+  
+
+  <section id="projects" class="fade-in" data-aos="fade-up" style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); padding: 2rem;">
+    <h2 style="text-align: center; color: #567C8D;">Project Highlights</h2>
+  
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 2rem;">
+      
+      <!-- OCD -->
+      <div style="flex: 1 1 300px; max-width: 350px; background-color: #FAFAFA; border: 1px solid #C0D9E6; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); padding: 1rem; text-align: center;">
+        <img src="ocd-visual.png" alt="OCD" style="width: 70px; height: 70px; border-radius: 10px; margin-bottom: 1rem;">
+        <h4>OCD Behavioral Insights (SQL + Tableau)</h4>
+        <p style="font-size: 0.95rem;">Analyzed YBOCS scores and behavioral loops using SQL & Tableau to identify high-risk OCD sufferers.</p>
+        <a href="https://github.com/ananyas1999/OCD--Tableau-and-SQL" target="_blank" style="color: #2F4156; font-weight: bold;">🔗 View on GitHub</a>
+      </div>
+  
+      <!-- Cirrhosis -->
+      <div style="flex: 1 1 300px; max-width: 350px; background-color: #FAFAFA; border: 1px solid #C0D9E6; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); padding: 1rem; text-align: center;">
+        <img src="disease.png" alt="Cirrhosis" style="width: 70px; height: 70px; border-radius: 10px; margin-bottom: 1rem;">
+        <h4>Cirrhosis Outcome Prediction (ML + Databricks)</h4>
+        <p style="font-size: 0.95rem;">Trained a classifier on 10,000+ liver patient records, optimized performance, and logged using MLflow.</p>
+        <a href="https://github.com/ananyas1999/cirrhosis_outcome_prediction" target="_blank" style="color: #2F4156; font-weight: bold;">🔗 View on GitHub</a>
+      </div>
+  
+      <!-- AI Case Study -->
+      <div style="flex: 1 1 300px; max-width: 350px; background-color: #FAFAFA; border: 1px solid #C0D9E6; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); padding: 1rem; text-align: center;">
+        <img src="robot.jpg" alt="AI" style="width: 70px; height: 70px; border-radius: 10px; margin-bottom: 1rem;">
+        <h4>Age of Artificial Intelligence (Case Study)</h4>
+        <p style="font-size: 0.95rem;">Built a conversational AI simulation using NLP + topic-based logic focused on storytelling evolution.</p>
+        <a href="https://github.com/ananyas1999/Age-of-Artificial-Intelligence-" target="_blank" style="color: #2F4156; font-weight: bold;">🔗 View on GitHub</a>
+      </div>
+  
+      <!-- Azure Platform -->
+      <div style="flex: 1 1 300px; max-width: 350px; background-color: #FAFAFA; border: 1px solid #C0D9E6; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); padding: 1rem; text-align: center;">
+        <img src="meddggenius.jpg" alt="Azure" style="width: 70px; height: 70px; border-radius: 10px; margin-bottom: 1rem;">
+        <h4>Cloud Data Platform (Azure, Data Engineering)</h4>
+        <p style="font-size: 0.95rem;">Built a secure Azure-based data platform for MeddGGenius to support scalable ingestion and reporting.</p>
+        <a href="https://github.com/ananyas1999/Building-a-Scalable-and-Secure-Cloud-Data-Platform-for-MeddGGenius-Using-Azure" target="_blank" style="color: #2F4156; font-weight: bold;">🔗 View on GitHub</a>
+      </div>
+  
+      <!-- Fleet Analysis -->
+      <div style="flex: 1 1 300px; max-width: 350px; background-color: #FAFAFA; border: 1px solid #C0D9E6; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); padding: 1rem; text-align: center;">
+        <img src="fleet.jpg" alt="Fleet" style="width: 70px; height: 70px; border-radius: 10px; margin-bottom: 1rem;">
+        <h4>Truck Fleet Optimization (Big Data, Hadoop)</h4>
+        <p style="font-size: 0.95rem;">Analyzed inefficiencies in logistics using Hadoop for fuel optimization and predictive maintenance.</p>
+        <a href="https://docs.google.com/presentation/d/1yCGl6CpeZZVLJe9W3PgYkLYxJhd9g2k2/edit?usp=sharing&ouid=104700588996787652759&rtpof=true&sd=true" target="_blank" style="color: #2F4156; font-weight: bold;">🔗 View Slide Deck</a>
+      </div>
+  
+      <!-- Deep Work Book Critique -->
+<div style="flex: 1 1 300px; max-width: 350px; background-color: #FAFAFA; border: 1px solid #C0D9E6; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); padding: 1rem; text-align: center;">
+  <img src="deepwork.jpg" alt="Deep Work" style="width: 70px; height: 70px; border-radius: 10px; margin-bottom: 1rem;">
+  <h4>Deep Work: Productivity & Focus (Book Critique)</h4>
+  <p style="font-size: 0.95rem;">Critically explored Cal Newport’s Deep Work concepts with a visual walkthrough, mapping personal reflection and digital distractions into actionable strategies.</p>
+  <a href="https://github.com/ananyas1999/Deep-work-Book-Critique/tree/main" target="_blank" style="color: #2F4156; font-weight: bold;">🔗 View on GitHub</a>
+</div>
+
+    </div>
+  </section>
+  
+<div style="height: 2px; width: 80%; margin: 3rem auto; background: linear-gradient(to right, #C0D9E6, #ffffff, #C0D9E6);"></div>
+<section id="education" class="standard-section" data-aos="fade-up" style="padding: 1.5rem;">
+  <h2 style="text-align: center; color: #567C8D; margin-bottom: 1.5rem;">Education</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center;">
+
+    <!-- UTD Card -->
+    <div style="flex: 1 1 320px; background: #FAFAFA; border: 1px solid #C0D9E6; border-left: 6px solid #2F4156; border-radius: 12px; padding: 1.2rem; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+      <h3 style="margin: 0;">The University of Texas at Dallas</h3>
+      <p style="margin: 0.3rem 0; font-weight: bold;">MS in Information Technology and Management</p>
+      <p style="font-size: 0.9rem; color: #567C8D;">Graduated May 2025</p>
+      <p style="font-size: 0.88rem; color: #2F4156;">Relevant Courses: Python, Big Data, Cloud, Visualization, Warehousing, Statistics</p>
+    </div>
+
+    <!-- VTU Card -->
+    <div style="flex: 1 1 320px; background: #FAFAFA; border: 1px solid #C0D9E6; border-left: 6px solid #2F4156; border-radius: 12px; padding: 1.2rem; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+      <h3 style="margin: 0;">JSS Academy of Technical Education, Bangalore</h3>
+      <p style="margin: 0.3rem 0; font-weight: bold;">BE in Electronics and Communication Engineering</p>
+      <p style="font-size: 0.9rem; color: #567C8D;">Graduated June 2021</p>
+    </div>
+
+  </div>
+</section>
+
+<div style="height: 2px; width: 80%; margin: 3rem auto; background: linear-gradient(to right, #C0D9E6, #ffffff, #C0D9E6);"></div>
+
+
+<section id="experience" data-aos="fade-up" style="background-color: #ffffff; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">
+  <h2 style="color: #567C8D; text-align: center;">Professional Experience</h2>
+
+  <div style="position: relative; margin-top: 2.5rem; padding-left: 2rem;">
+
+    <div style="position: absolute; left: 50%; top: 0; bottom: 0; width: 4px; background-color: #C0D9E6; transform: translateX(-50%);"></div>
+
+    <!-- Job 1 -->
+    <div style="position: relative; width: 100%; display: flex; justify-content: flex-start; margin-bottom: 3rem;">
+      <div style="background-color: #FAFAFA; border-left: 8px solid #2F4156; padding: 1.5rem 2rem; border-radius: 12px; width: 48%; box-shadow: 0 2px 8px rgba(0,0,0,0.06); z-index: 1;">
+        <h3 style="margin: 0;">Nuvento Inc</h3>
+        <p style="margin: 0.2rem 0; font-weight: bold;">Software Engineer Intern (Feb 2025 – May 2025)</p>
+        <p style="margin-top: 0.6rem;">Worked on education data platforms, optimizing schemas, building chatbots, and automating data pipelines for real-time insights.</p>
+      </div>
+    </div>
+
+    <div style="position: absolute; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; background-color: white; border: 4px solid #2F4156; border-radius: 50%;"></div>
+
+   <!-- Merged Cognizant Job -->
+<div style="position: relative; width: 100%; display: flex; justify-content: flex-end; margin-bottom: 3rem;">
+  <div style="background-color: #FAFAFA; border-right: 8px solid #2F4156; padding: 1.5rem 2rem; border-radius: 12px; width: 48%; box-shadow: 0 2px 8px rgba(0,0,0,0.06); z-index: 1;">
+    <h3 style="margin: 0;">Cognizant Technology Solutions, India</h3>
+    <p style="margin: 0.2rem 0; font-weight: bold;">Data Analyst (Jul 2021 – Jul 2023)</p>
+    <p style="margin-top: 0.6rem;">
+      Led analytics projects for a UK-based energy client by building KPI dashboards, optimizing ETL pipelines using Databricks and Hadoop, and automating Power BI reports via Power Automate—saving 12+ hours weekly. Delivered insights from SQL, Python, and Excel-based churn analysis and time-series forecasting, boosting outage prediction accuracy by 28%.
+    </p>
+  </div>
+</div>
+
+<div style="position: absolute; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; background-color: white; border: 4px solid #2F4156; border-radius: 50%;"></div>
+    <!-- Job 4 -->
+    <div style="position: relative; width: 100%; display: flex; justify-content: flex-end;">
+      <div style="background-color: #FAFAFA; border-right: 8px solid #2F4156; padding: 1.5rem 2rem; border-radius: 12px; width: 48%; box-shadow: 0 2px 8px rgba(0,0,0,0.06); z-index: 1;">
+        <h3 style="margin: 0;">Unique Tech Designs</h3>
+        <p style="margin: 0.2rem 0; font-weight: bold;">Data Analyst Intern (Aug 2020 – Sep 2020)</p>
+        <p style="margin-top: 0.6rem;">Worked with IoT sensor data and diagnostic logs to improve hardware usability and analytics reporting.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  
+  <div style="height: 2px; width: 80%; margin: 3rem auto; background: linear-gradient(to right, #C0D9E6, #ffffff, #C0D9E6);"></div>
+
+  
+  <section id="certifications" class="standard-section" style="text-align: center;">
+    <h2 style="color: #567C8D;">🎓 Main Certifications</h2>
+  
+    <div class="cert-grid">
+  
+      <!-- Azure DP-900 -->
+      <div class="cert-booklet">
+        <img src="azure_dp900_badge.png" class="cert-logo" alt="Azure Badge">
+        <div style="text-align: left;">
+          <h3>Microsoft Azure Data Fundamentals (DP-900)</h3>
+          <p class="cert-org">Microsoft</p>
+          <p class="cert-validity">
+            <a href="https://drive.google.com/file/d/1Ql0oliGglL5ZiiuOxR64ii1934Z3ANrD/view?usp=sharing" target="_blank">📄 View Certificate</a><br>
+            <a href="https://www.credly.com/badges/12a67a76-8e22-43b0-9fa5-41cd8dab6543/public_url" target="_blank">🔗 Verify on Credly</a>
+          </p>
+        </div>
+      </div>
+  
+      <!-- AWS Cloud Practitioner -->
+      <div class="cert-booklet">
+        <img src="aws_cloud_practitioner_badge.png" class="cert-logo" alt="AWS Badge">
+        <div style="text-align: left;">
+          <h3>AWS Certified Cloud Practitioner</h3>
+          <p class="cert-org">Amazon Web Services</p>
+          <p class="cert-validity">
+            <a href="https://drive.google.com/file/d/1liAj7EUS1FXXxFq0lWywp2u3ZHS7lWpb/view?usp=sharing" target="_blank">📄 View Certificate</a><br>
+            <a href="https://www.credly.com/badges/37073b63-89ea-4e49-bd0c-f3ae8516e596/public_url" target="_blank">🔗 Verify on Credly</a>
+          </p>
+        </div>
+      </div>
+  
+      <!-- ✅ FIXED: Snowflake card now inside .cert-grid -->
+      <div class="cert-booklet">
+        <img src="snowpro_associate_platform_badge.png" class="cert-logo" alt="Snowflake Associate Platform Badge">
+        <div style="text-align: left;">
+          <h3>SnowPro Associate: Platform</h3>
+          <p class="cert-org">Snowflake</p>
+          <p class="cert-validity">
+            <a href="https://drive.google.com/file/d/1wzoqxYMHmqQ0SiTXZwY_Is1jbLQaXnTl/view?usp=sharing" target="_blank">📄 View Certificate</a><br>
+            <a href="https://achieve.snowflake.com/c5b5f44c-e6b9-461f-8903-8012253fc8e4#acc.NBdpK1nt" target="_blank">🔗 Verify on Snowflake</a>
+          </p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+  <div style="height: 2px; width: 80%; margin: 3rem auto; background: linear-gradient(to right, #C0D9E6, #ffffff, #C0D9E6);"></div>
+  
+  <section class="standard-section" style="text-align: center;">
+    <h2 style="color: #567C8D;">🎖️ Additional Badges</h2>
+  
+    <div class="cert-grid" style="margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center;">
+  
+      <!-- Badge 1: Alteryx Designer Core -->
+      <a href="https://www.credly.com/badges/1d6f7d98-747a-4ed1-9d68-cfdc76fe23c1/public_url" target="_blank">
+        <img src="badge1.png" alt="Alteryx Designer Core" style="width: 120px; border-radius: 12px;">
+      </a>
+  
+      <!-- Badge 2: KNIME L1 -->
+      <a href="https://www.credly.com/badges/6cf9df19-316d-44a0-9471-e2dceb8d8d1b/public_url" target="_blank">
+        <img src="badge2.png" alt="KNIME L1" style="width: 120px; border-radius: 12px;">
+      </a>
+  
+      <!-- Badge 3: Alteryx Foundation -->
+      <a href="https://www.credly.com/badges/d2da61e1-5a33-4e65-8349-5b737ed55ef9/public_url" target="_blank">
+        <img src="badge3.png" alt="Alteryx Foundation" style="width: 120px; border-radius: 12px;">
+      </a>
+  
+    </div>
+  </section>
+  
+  
+  
+  <div style="height: 2px; width: 80%; margin: 3rem auto; background: linear-gradient(to right, #C0D9E6, #ffffff, #C0D9E6);"></div>
+  
+
+  <!-- Spotify-Style Leadership Carousel Section -->
+<section id="leadership" class="standard-section" style="text-align: center;">
+  <h2 style="font-size: 2rem; color: #2F4156; margin-bottom: 2rem;">✨ Leadership, Creativity & Recognition</h2>
+
+  <div class="spotify-scroll-carousel">
+
+    <!-- Card 1 -->
+    <div class="spotify-nowplaying-card">
+      <div class="album-frame">
+        <img src="wtm.jpg" alt="WTM Ambassador">
+      </div>
+      <div class="controls">
+        <div class="track-info">
+          <div class="track-title">WTM Ambassador</div>
+          <div class="track-artist">Google | Advocacy</div>
+        </div>
+        <div class="progress-bar">
+          <span>0:00</span>
+          <div class="bar">
+            <div class="fill"></div>
+          </div>
+          <span>3:14</span>
+        </div>
+        <div class="player-buttons">
+          <i class="icon">🔀</i>
+          <i class="icon">⏮️</i>
+          <i class="icon play">▶️</i>
+          <i class="icon">⏭️</i>
+          <i class="icon">🔁</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="spotify-nowplaying-card">
+      <div class="album-frame">
+        <img src="author.jpg" alt="Published Author">
+      </div>
+      <div class="controls">
+        <div class="track-info">
+          <div class="track-title">Published Author</div>
+          <div class="track-artist">Amazon | Storytelling</div>
+        </div>
+        <div class="progress-bar">
+          <span>0:00</span>
+          <div class="bar">
+            <div class="fill"></div>
+          </div>
+          <span>2:45</span>
+        </div>
+        <div class="player-buttons">
+          <i class="icon">🔀</i>
+          <i class="icon">⏮️</i>
+          <i class="icon play">▶️</i>
+          <i class="icon">⏭️</i>
+          <i class="icon">🔁</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="spotify-nowplaying-card">
+      <div class="album-frame">
+        <img src="utd-leadership.jpg" alt="UTD Leader">
+      </div>
+      <div class="controls">
+        <div class="track-info">
+          <div class="track-title">UTD Student Leader</div>
+          <div class="track-artist">UT Dallas | Leadership</div>
+        </div>
+        <div class="progress-bar">
+          <span>0:00</span>
+          <div class="bar">
+            <div class="fill"></div>
+          </div>
+          <span>3:05</span>
+        </div>
+        <div class="player-buttons">
+          <i class="icon">🔀</i>
+          <i class="icon">⏮️</i>
+          <i class="icon play">▶️</i>
+          <i class="icon">⏭️</i>
+          <i class="icon">🔁</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="spotify-nowplaying-card">
+      <div class="album-frame">
+        <img src="springer.jpg" alt="Researcher">
+      </div>
+      <div class="controls">
+        <div class="track-info">
+          <div class="track-title">Springer Researcher</div>
+          <div class="track-artist">Smart Systems | ICICS</div>
+        </div>
+        <div class="progress-bar">
+          <span>0:00</span>
+          <div class="bar">
+            <div class="fill"></div>
+          </div>
+          <span>2:59</span>
+        </div>
+        <div class="player-buttons">
+          <i class="icon">🔀</i>
+          <i class="icon">⏮️</i>
+          <i class="icon play">▶️</i>
+          <i class="icon">⏭️</i>
+          <i class="icon">🔁</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="spotify-nowplaying-card">
+      <div class="album-frame">
+        <img src="uandi.jpg" alt="U&I Leader">
+      </div>
+      <div class="controls">
+        <div class="track-info">
+          <div class="track-title">Circle Leader – U&I</div>
+          <div class="track-artist">NGO | Education</div>
+        </div>
+        <div class="progress-bar">
+          <span>0:00</span>
+          <div class="bar">
+            <div class="fill"></div>
+          </div>
+          <span>3:22</span>
+        </div>
+        <div class="player-buttons">
+          <i class="icon">🔀</i>
+          <i class="icon">⏮️</i>
+          <i class="icon play">▶️</i>
+          <i class="icon">⏭️</i>
+          <i class="icon">🔁</i>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+  
+  
+  <div style="height: 2px; width: 80%; margin: 3rem auto; background: linear-gradient(to right, #C0D9E6, #ffffff, #C0D9E6);"></div>
+
+
+  <section id="recommendations" data-aos="fade-up" class="standard-section" style="text-align: center;">
+    <h2 style="color: #567C8D; margin-bottom: 2rem;">🌟 Recommendations</h2>
+  
+    <div class="rec-carousel">
+      <div class="rec-track">
+       
+        <div class="rec-card small">
+          <img src="dp-andy.jpg" alt="Andy Helgeson" class="rec-dp">
+          <blockquote>“Ananya has been a great leader and role model for her peers at the Student Union.”</blockquote>
+          <blockquote>“She elevated the spirit and demeanor of the team since joining.”</blockquote>
+          <h4>Andy Helgeson</h4>
+          <p class="rec-title">Supervisor at UT Dallas Student Union</p>
+        </div>
+        <div class="rec-card small">
+          <img src="dp-sean.jpg" alt="Sean Collins" class="rec-dp">
+          <blockquote>“Ananya has grown as a person and as a team leader and has made us proud in her accomplishments as a professional.”</blockquote>
+          <blockquote>“Her communication skills and work ethic always supported our efforts here at UTD.”</blockquote>
+          <h4>Sean Collins</h4>
+          <p class="rec-title">Supervisor at UT Dallas Student Union</p>
+        </div>
+        
+        <div class="rec-card small">
+          <img src="dp-tori.jpg" alt="Tori Speer" class="rec-dp">
+          <blockquote>“Ananya was promoted to Student Manager due to her impressive skills and leadership as a Student Employee.”</blockquote>
+          <blockquote>“She serves on the Student Leadership Council and takes the initiative to get things done.”</blockquote>
+          <h4>Tori Speer</h4>
+          <p class="rec-title">Supervisor at UTD Student Union</p>
+        </div>
+        
+        <!-- 1 -->
+        <div class="rec-card small">
+          <img src="dp-brenda.jpg" alt="Brenda Siri" class="rec-dp">
+          <blockquote>“Ananya takes an active interest in learning and gaining knowledge in American Business Practices.”</blockquote>
+          <blockquote>“Her experience with Python, Microsoft Power BI, C++, My SQL, C, HTML, CSS, JavaScript, and Informatica would make her an asset to any organization.”</blockquote>
+          <h4>Brenda Siri</h4>
+          <p class="rec-title">President & CEO, Corporate Connections - Ananya's Professor</p>
+        </div>
+  
+        <!-- 2 -->
+        <div class="rec-card small">
+          <img src="dp-partha.jpg" alt="Parthasaradhi Naidu" class="rec-dp">
+          <blockquote>“I was particularly impressed with her communication skills and ability to deal with challenging situations.”</blockquote>
+          <blockquote>“She will be an excellent asset to the team.”</blockquote>
+          <h4>Parthasaradhi Naidu</h4>
+          <p class="rec-title">Partha directly managed Ananya at Cognizant</p>
+        </div>
+  
+        <!-- 3 -->
+        <div class="rec-card small">
+          <img src="dp-shreya.jpg" alt="Shreya Srinivas" class="rec-dp">
+          <blockquote>“Her clear vision and strategic thinking have been an asset to all the projects she has been a part of.”</blockquote>
+          <blockquote>“I highly recommend Ananya as a leader and believe her contributions would be invaluable to any organization.”</blockquote>
+          <h4>Shreya Srinivas</h4>
+          <p class="rec-title">Shreya managed Ananya at U&I Trust</p>
+        </div>
+  
+        <!-- 4 -->
+        <div class="rec-card small">
+          <img src="dp-mukul.jpg" alt="Mukul Mysore" class="rec-dp">
+          <blockquote>“Full of ideas and her clarity towards problem solving is exemplary.”</blockquote>
+          <blockquote>“One won't find many like Ananya out there.”</blockquote>
+          <h4>Mukul Mysore</h4>
+          <p class="rec-title">Mukul and Ananya worked in the same team in U&I trust</p>
+        </div>
+  
+        <!-- 5 -->
+        <div class="rec-card small">
+          <img src="dp-venkat.jpg" alt="Venkat Nikhil" class="rec-dp">
+          <blockquote>“She is highly adaptable, supportive and encouraging and would be a great asset to any team.”</blockquote>
+          <blockquote>“It was really great to be working under her leadership.”</blockquote>
+          <h4>Venkat Nikhil</h4>
+          <p class="rec-title">Venkat Nikhil reported directly to Ananya at U&I Trust</p>
+        </div>
+  
+        <!-- 6 -->
+        <div class="rec-card small">
+          <img src="dp-prabhu.jpg" alt="Prabhu Sundararaj" class="rec-dp">
+          <blockquote>“She set up sync up calls and gathered status for all the pending tasks from fellow teammates.”</blockquote>
+          <blockquote>“She will become a good team lead and trainer for her fellow trainees.”</blockquote>
+          <h4>Prabhu Sundararaj</h4>
+          <p class="rec-title">Prabhu managed Ananya at Cognizant</p>
+        </div>
+  
+        <!-- 7 -->
+        <div class="rec-card small">
+          <img src="dp-ambreesh.jpg" alt="Ambreesh Naidu" class="rec-dp">
+          <blockquote>“She has shared tons of quality info that a life coach would generally have.”</blockquote>
+          <blockquote>“The way she is handling the project is comparable to experts.”</blockquote>
+          <h4>Ambreesh Naidu</h4>
+          <p class="rec-title">Ambreesh and Ananya worked together at Cognizant</p>
+        </div>
+  
+      </div>
+  
+      <button class="rec-btn prev">&#10094;</button>
+      <button class="rec-btn next">&#10095;</button>
+      <div class="rec-dots"></div>
+    </div>
+  </section>
+  
+  
+  <div style="height: 2px; width: 80%; margin: 3rem auto; background: linear-gradient(to right, #C0D9E6, #ffffff, #C0D9E6);"></div>
+
+
+
+  <section id="contact" data-aos="fade-up" style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); padding: 2rem; max-width: 900px; margin: 2rem auto;">
+    <h2 style="color: #567C8D;">📬 Contact Me</h2>
+    <p style="font-size: 1.1rem; margin-bottom: 1rem;">
+      I'm always happy to connect! Feel free to reach out via email or phone.
+    </p>
+    <div style="background-color: #F4F9FB; padding: 1rem 1.5rem; border-left: 6px solid #2F4156; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.05);">
+      <p style="margin: 0.5rem 0;"><strong>Email:</strong> <a href="mailto:ananya.achar82@gmail.com" style="color: #2F4156; font-weight: bold; text-decoration: underline;">ananya.achar82@gmail.com</a></p>
+      <p style="margin: 0.5rem 0;"><strong>Phone:</strong> (945) 527-4967</p>
+    </div>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2025 Ananya Srinath Achar. All rights reserved.</p>
+  </footer>
+  <script>
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+  
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+<a href="#top" id="backToTop" style="display:none;position:fixed;bottom:30px;right:20px;background-color:#567C8D;color:white;padding:10px 15px;border-radius:50%;text-decoration:none;font-weight:bold;font-size:18px;">↑</a>
+
+<script>
+  const backToTop = document.getElementById('backToTop');
+  window.onscroll = () => {
+    backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+  };
+</script>
+<script>
+  window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a');
+
+    let currentSection = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      if (scrollY >= sectionTop) {
+        currentSection = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').includes(currentSection)) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+<script>
+  const recTrack = document.querySelector('.rec-track');
+  const recCards = Array.from(recTrack.children);
+  const nextRec = document.querySelector('.rec-btn.next');
+  const prevRec = document.querySelector('.rec-btn.prev');
+  const recDotsNav = document.querySelector('.rec-dots');
+  const recCount = recCards.length;
+  let recIndex = 0;
+
+  for (let i = 0; i < recCount; i++) {
+    const dot = document.createElement('span');
+    if (i === 0) dot.classList.add('active');
+    recDotsNav.appendChild(dot);
+  }
+
+  const recDots = Array.from(recDotsNav.children);
+
+  function updateRecCarousel(i) {
+    const width = recCards[0].getBoundingClientRect().width;
+    recTrack.style.transform = `translateX(-${width * i}px)`;
+    recDots.forEach(dot => dot.classList.remove('active'));
+    recDots[i].classList.add('active');
+  }
+
+  nextRec.addEventListener('click', () => {
+    recIndex = (recIndex + 1) % recCount;
+    updateRecCarousel(recIndex);
+  });
+
+  prevRec.addEventListener('click', () => {
+    recIndex = (recIndex - 1 + recCount) % recCount;
+    updateRecCarousel(recIndex);
+  });
+
+  recDots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      recIndex = i;
+      updateRecCarousel(recIndex);
+    });
+  });
+
+  // Auto-slide every 7s
+  setInterval(() => {
+    recIndex = (recIndex + 1) % recCount;
+    updateRecCarousel(recIndex);
+  }, 7000);
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init({ duration: 800, once: true });</script>
+
+<script>
+  const leadershipTrack = document.querySelector('#leadership-carousel .carousel-track');
+  const leadershipCards = Array.from(leadershipTrack.children);
+  const leadershipDots = document.getElementById('leadership-dots');
+  let leadershipIndex = 0;
+
+  leadershipCards.forEach((_, i) => {
+    const dot = document.createElement('span');
+    dot.addEventListener('click', () => changeLeadershipSlide(i - leadershipIndex));
+    if (i === 0) dot.classList.add('active');
+    leadershipDots.appendChild(dot);
+  });
+
+  function updateLeadershipCarousel() {
+    const width = leadershipCards[0].getBoundingClientRect().width;
+    leadershipTrack.style.transform = `translateX(-${width * leadershipIndex}px)`;
+    [...leadershipDots.children].forEach(dot => dot.classList.remove('active'));
+    leadershipDots.children[leadershipIndex].classList.add('active');
+  }
+
+  function changeLeadershipSlide(direction) {
+    leadershipIndex = (leadershipIndex + direction + leadershipCards.length) % leadershipCards.length;
+    updateLeadershipCarousel();
+  }
+
+  setInterval(() => changeLeadershipSlide(1), 7000);
+</script>
+
+  
+</body>
+</html>
