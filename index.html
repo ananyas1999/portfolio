@@ -1,0 +1,2395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-35D09ZJ5JK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-35D09ZJ5JK');
+
+  function scrollCarousel(direction) {
+  const container = document.querySelector('.carousel-track');
+  const scrollAmount = 350; // pixels
+  container.scrollBy({
+    left: scrollAmount * direction,
+    behavior: 'smooth'
+  });
+}
+
+</script>
+  <style>
+    .fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+  
+}
+
+
+  </style>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ananya Srinath Achar | Portfolio</title>
+  <link rel="icon" type="image/png" href="cutelogo.png"/>
+  
+  <style>
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  color: var(--color-primary);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: white;
+  background-color: var(--color-accent);
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+section {
+  padding: 4rem 5%;
+  border-radius: 12px;
+}
+
+.standard-section {
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.card {
+  background-color: var(--color-card);
+  border: none;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+.button {
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background-color: #d62839;
+}
+nav, footer {
+  background-color: var(--color-dark);
+  color: white;
+  padding: 1rem 2rem;
+}
+
+
+
+body {
+  font-family: 'Source Serif 4', serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4C1D3D; /* A modern dark gray */
+  background-color: #4C1D3D;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #4C1D3D; /* Slightly darker for strong contrast */
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+strong {
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+
+
+.standard-section {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  width: 100%;
+  /* Remove this line ↓ */
+  /* border: 1px solid #4C1D3D; */
+}
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Adjust if your navbar height changes */
+}
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      
+  font-family: 'Outfit', sans-serif;
+
+
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgb(255, 255, 255);
+      color: #852E4E;
+    }
+
+    
+    header {
+      header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%; width: 100%;
+  background-color: rgba(0,0,0,0.3);
+  backdrop-filter: blur(2px);
+  z-index: 0;
+}
+header * {
+  position: relative;
+  z-index: 1;
+}
+header {
+  position: relative;
+}
+
+    
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 3rem 1rem 2rem 1rem;
+      color: white;
+    }
+
+    header img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 5px solid white;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .cta-buttons a:hover {
+  background-color: #f3accb;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+
+.cta-buttons a {
+  background-color: #4C1D3D;   /* Soft pink */
+  color: white;                /* White text */
+  padding: 0.9rem 1.6rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  outline: 2px solid #4C1D3D;
+  outline-offset: -5px;
+}
+
+.cert-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border-left: 6px solid #ffffff;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease;
+  color: #ffffff;
+}
+
+.cert-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+.cert-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.cert-org {
+  font-size: 0.9rem;
+  color: #fffeff;
+  margin: 0.2rem 0 0;
+}
+
+.cert-link {
+  font-weight: bold;
+  color: #852E4E;
+  font-size: 1rem;
+}
+
+.card, .rec-card.small, .cert-card {
+  width: 100%;
+  max-width: 860px;
+  margin: auto;
+}
+
+.section-carousel {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+}
+
+.carousel-card {
+  flex: 0 0 300px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 1rem;
+  text-align: center;
+}
+
+.carousel-card img {
+  width: 100%;
+  border-radius: 12px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.carousel-card audio {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: #852E4E;
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background: #A13E5B;
+}
+
+.carousel-btn.prev {
+  left: -10px;
+}
+
+.carousel-btn.next {
+  right: -10px;
+}
+
+/* Optional: Responsive */
+@media (max-width: 768px) {
+  .carousel-card {
+    flex: 0 0 80%;
+  }
+}
+
+    nav {
+  background-color: #ffffff;  /* light blue from your screenshot */
+  text-align: center;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  <button onclick="toggleTheme()" style="float:right; margin-right: 20px; padding: 6px 10px; border-radius: 8px;">🌓</button>
+
+}
+
+
+nav a {
+  background-color: #852E4E;        /* dark blue */
+  color: #ffffff;                   /* light blue text */
+  padding: 10px 20px;
+  margin: 0 0.5rem;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;                     /* remove default border */
+  outline: 3px solid #4C1D3D;       /* single light blue outline */
+  outline-offset: -6px;             /* brings it slightly inside */
+  display: inline-block;
+}
+
+
+
+
+
+
+nav a:hover {
+  background-color: #ffffff;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.gradient-line {
+  border: none;
+  height: 3px;
+  background: linear-gradient(to right, #4C1D3D, #ffffff, #4C1D3D);
+  margin: 3rem auto;
+  width: 90%;
+  border-radius: 6px;
+}
+
+
+section {
+  max-width: 900px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+
+    h2 {
+      color: #4C1D3D;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #852E4E;
+      border-left: 4px solid #4C1D3D;
+      padding-left: 1rem;
+      margin: 1rem 0;
+    }
+
+    .tech-stack {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-top: 2rem;
+      box-shadow: 1px 2px 4px 2px #4C1D3D;
+    }
+
+    .aspiration {
+  background-color: #852E4E;
+  color: #4C1D3D;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 2rem;
+  max-width: 900px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  border: 1px solid #4C1D3D;
+}
+.badge {
+  background-color: #4C1D3D;
+  color: #852E4E;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+
+    footer {
+      text-align: center;
+      background-color: #ffffff;
+      color: #4C1D3D;
+      padding: 1rem;
+      margin-top: 3rem;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      .cta-buttons a {
+        display: block;
+        margin: 0.5rem auto;
+      }
+
+      header {
+        padding: 2rem 1rem;
+      }
+    }
+    nav a.active {
+  color: #FFFFFF;
+  background-color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+.cta-buttons a {
+  background-color: #4C1D3D;
+  color: #852E4E;
+  padding: 0.9rem 1.6rem; /* more padding to give space inside */
+  margin: 0.5rem;
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  outline: 2px solid #852E4E;      /* dark blue border */
+  outline-offset: -6px;            /* pulls the border inside */
+}
+
+
+
+.cta-buttons a:hover {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+nav a.active {
+  background-color: #852E4E !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 0 2px #852E4E inset;
+}
+
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 2rem auto;
+}
+
+.cert-booklet {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.cert-booklet:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.cert-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+
+@media (max-width: 768px) {
+  .cert-booklet {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+
+.cert-booklet:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.cert-logo {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 0.4rem;
+}
+
+.cert-booklet h3 {
+  margin: 0;
+  color: #852E4E;
+  font-size: 1.1rem;
+}
+
+.cert-org {
+  margin: 0.4rem 0 0.2rem;
+  color: #4C1D3D;
+  font-size: 0.9rem;
+}
+.cert-logo {
+  filter: none !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+}
+
+.cert-validity {
+  font-size: 0.85rem;
+  color: #7B9CAF;
+}
+
+body.dark-mode {
+  background-color: #4C1D3D;
+  color: #f0f0f0;
+}
+
+body.dark-mode nav {
+  background: rgba(30, 30, 30, 0.8);
+}
+
+body.dark-mode .standard-section {
+  background: #2b2b2b;
+  color: #fff;
+}
+h1 {
+  color: #852E4E;
+}
+
+.rec-carousel {
+  position: relative;
+  max-width: 900px;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+.rec-track {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+
+.rec-card.small {
+  min-width: 100%;
+  background: #FFFFFF;
+  border-radius: 14px;
+  padding: 1.8rem 1.2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.rec-dp {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.rec-card blockquote {
+  font-style: italic;
+  color: #852E4E;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  margin: 0.4rem 0;
+}
+
+.rec-card h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  color: #852E4E;
+  font-size: 1rem;
+}
+
+.rec-title {
+  color: #4C1D3D;
+  font-size: 0.9rem;
+}
+
+.rec-btn {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background-color: #852E4E;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rec-btn.prev {
+  left: 10px;
+}
+
+.rec-btn.next {
+  right: 10px;
+}
+
+.rec-dots {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.rec-dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #4C1D3D;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.rec-dots .active {
+  background: #852E4E;
+}
+
+.spotify-scroll-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.spotify-nowplaying-card {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 240px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 16px;
+  color: #4C1D3D;
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.album-frame {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #4C1D3D;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.album-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.track-info {
+  text-align: center;
+}
+
+.track-title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.track-artist {
+  font-size: 0.75rem;
+  color: #4C1D3D;
+}
+
+.progress-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.7rem;
+  color: #4C1D3D;
+}
+
+.bar {
+  flex-grow: 1;
+  height: 4px;
+  background-color: #4C1D3D;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.bar .fill {
+  width: 30%;
+  height: 100%;
+  background-color: #4C1D3D;
+}
+
+.player-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.1rem;
+  color: #4C1D3D;
+  margin-top: 10px;
+}
+
+.icon.play {
+  font-size: 1.4rem;
+  color: #4C1D3D;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}
+
+.box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  flex: 1 1 48%;
+  box-sizing: border-box;
+}
+.projects-card {
+  background: white;
+  border: none; /* remove the border */
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* soft shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.projects-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+
+  </style>
+</head>
+<script>
+  window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav a');
+
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      if (pageYOffset >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').includes(current)) {
+        link.classList.add('active');
+      }
+    });
+  });
+  function toggleTheme() {
+  document.body.classList.toggle('dark-mode');
+}
+
+</script>
+
+<body>
+  <header>
+    <img src="profile.jpg" alt="Ananya Srinath Achar" />
+    <h1>Ananya Srinath Achar</h1>
+    </div>
+  </header>
+
+  
+
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#certifications">Skills</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#recommendations">Recommendations</a>
+  </nav>
+  <hr class="gradient-line" />  
+  <section id="about-education" style="padding: 4rem 5%; background-color: ##4C1D3D;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem; width: 100%;">
+  
+      <!-- About Me -->
+      <div style="flex: 1; min-width: 300px; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);">
+        <h2 style="margin-top: 0;">☕ <span style="font-family: 'Oswald', sans-serif;">About Me</span></h2>
+        <p>Did you know?
+          I love laundry days. That is my passion for cleaning. Cleaning everything down to a T. It’s the same satisfaction I get when I clean messy data.</p>
+        <p>My entire profile talks about my love for technology, and while that’s a big part of who I am, I want you to know I’m more than that. My zest for life spills into so many other areas: nutrition, writing, psychology, music, and everything in between. I’m endlessly curious, and I believe that exploring different passions only makes me better at what I do.</p>
+      </div>
+  
+      <!-- Education -->
+      <div style="flex: 1; min-width: 300px; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);">
+        <h2 style="margin-top: 0;">🎓 <span style="font-family: 'Oswald', sans-serif;">Education</span></h2>
+  
+       <!-- UTD card -->
+<div style="background: white; border-radius: 10px; padding: 1rem; margin-bottom: 1.5rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);">
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <img src="utdlogo.png" alt="UTD" style="width: 30px; height: 30px;">
+    <div>
+      <strong style="color: #4C1D3D;">The University of Texas at Dallas</strong><br />
+      MS in Information Technology and Management<br />
+      Aug 2023 – May 2025
+    </div>
+  </div>
+</div>
+
+  
+        <!-- VTU card -->
+        <div style="background: white; border-radius: 10px; padding: 1rem; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="vtulogo.png" alt="VTU" style="width: 30px; height: 30px;">
+            <div>
+              <strong style="color: #4C1D3D;">Visvesvaraya Technological University</strong><br />
+              BE in Electronics and Communication Engineering<br />
+              Aug 2017 – Jun 2021
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+</div>
+
+  </section>
+  
+</div>
+
+
+
+
+<hr class="gradient-line" />
+
+  
+<section id="projects" class="fade-in" data-aos="fade-up" style="background-color: #FFFFFF; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); padding: 2rem;">
+  <h2 style="text-align: center; color: #4C1D3D;">Projects</h2>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; margin-top: 2rem;">
+    <!-- Repeat for 8 cards -->
+    <!-- PROJECT TEMPLATE -->
+    <div onclick="openModal('modal1')" style="cursor: pointer; flex: 1 1 45%; max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+      <img src="hotel.jpg" alt="Project 1" style="width: 100%; height: 250px; object-fit: cover;">
+      <div style="padding: 1rem 1.5rem 1.5rem 1.5rem;">
+        <h3 style="color: #4C1D3D; margin: 0;">Dynamic Hotel Pricing Engine</h3>
+        <p style="font-size: 0.85rem; font-weight: 600; color: #852E4E; margin-top: 0.25rem;">Regression Analysis + Time Series + Tableau</p>
+      
+        
+        <p style="color: #852E4E; margin-top: 0.5rem; font-size: 1rem;">I created a smart tool that helps hotels set the right room prices by looking at things like season, demand, and what competitors are charging. I also made a simple Tableau dashboard to help hotel teams see and adjust prices easily in real time. <i><u> click here to expand</u></i></p>
+      </div>
+    </div>
+
+    <div onclick="openModal('modal2')" style="cursor: pointer; flex: 1 1 45%; max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+      <img src="market.jpg" alt="Project 2" style="width: 100%; height: 250px; object-fit: cover;">
+      <div style="padding: 1rem 1.5rem 1.5rem 1.5rem;">
+        <h3 style="color: #4C1D3D; margin: 0;">Marketing Funnel Optimization</h3>
+        <p style="font-size: 0.85rem; font-weight: 600; color: #852E4E; margin-top: 0.25rem;">A/B Testing + Regression + Power BI Dashboard</p>
+        <p style="color: #852E4E; margin-top: 0.5rem; font-size: 1rem;">I worked on improving a company’s marketing funnel by testing what changes worked best and using data models to understand customer behavior. I also created a Power BI dashboard to show where users dropped off and how different groups interacted, helping the team make better decisions and improve conversions.<i><u> click here to expand</u></i></p>
+      </div>
+    </div>
+
+    <div onclick="openModal('modal3')" style="cursor: pointer; flex: 1 1 45%; max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+      <img src="credit.jpg" alt="Project 3" style="width: 100%; height: 250px; object-fit: cover;">
+      <div style="padding: 1rem 1.5rem 1.5rem 1.5rem;">
+        <h3 style="color: #4C1D3D; margin: 0;">Fraud Detection Engine for Credit Card Transactions</h3>
+        <p style="font-size: 0.85rem; font-weight: 600; color: #852E4E; margin-top: 0.25rem;">XGBoost + Anomaly Detection</p>
+        <p style="color: #852E4E; margin-top: 0.5rem; font-size: 1rem;">I built a smart fraud detection system using machine learning models like XGBoost and Isolation Forest. The goal was to spot unusual credit card activity and reduce false alerts. By combining these models, I improved how accurately the system could catch fraud while keeping it fast and reliable.<i><u> click here to expand</u></i></p>
+      </div>
+    </div>
+
+    <div onclick="openModal('modal4')" style="cursor: pointer; flex: 1 1 45%; max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+      <img src="planner.jpg" alt="Project 4" style="width: 100%; height: 250px; object-fit: cover;">
+      <div style="padding: 1rem 1.5rem 1.5rem 1.5rem;">
+        <h3 style="color: #4C1D3D; margin: 0;">Corporate Planning Tracker</h3>
+        <p style="font-size: 0.85rem; font-weight: 600; color: #852E4E; margin-top: 0.25rem;">BigQuery + dbt + Cloud Composer + KPI Dashboard</p>
+        <p style="color: #852E4E; margin-top: 0.5rem; font-size: 1rem;">I created a central tracking tool to help different teams monitor their goals and project updates in one place. Using BigQuery and dbt, I organized messy data into a clean warehouse. I also automated data loading with Google Sheets and Cloud Composer, making updates smooth and timely.<i><u> click here to expand</u></i></p>
+      </div>
+    </div>
+
+    <div onclick="openModal('modal5')" style="cursor: pointer; flex: 1 1 45%; max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+      <img src="commerce.jpg" alt="Project 5" style="width: 100%; height: 250px; object-fit: cover;">
+      <div style="padding: 1rem 1.5rem 1.5rem 1.5rem;">
+        <h3 style="color: #4C1D3D; margin: 0;">Streaming Order Analytics Platform</h3>
+        <p style="font-size: 0.85rem; font-weight: 600; color: #852E4E; margin-top: 0.25rem;">Apache Kafka + AWS Redshift + Airflow + Tableau</p>
+        <p style="color: #852E4E; margin-top: 0.5rem; font-size: 1rem;">I built a real-time system that tracks e-commerce orders using Apache Kafka and Airflow. It streams data into AWS Redshift to capture order events as they happen. I also created SQL views and dashboards in Tableau to help teams monitor sales patterns and delays quickly.<i><u> click here to expand</u></i></p>
+      </div>
+    </div>
+
+    <div onclick="openModal('modal6')" style="cursor: pointer; flex: 1 1 45%; max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+      <img src="retail.jpg" alt="Project 6" style="width: 100%; height: 250px; object-fit: cover;">
+      <div style="padding: 1rem 1.5rem 1.5rem 1.5rem;">
+        <h3 style="color: #4C1D3D; margin: 0;">Cloud-Native Data Lakehouse for Retail Insights</h3>
+        <p style="font-size: 0.85rem; font-weight: 600; color: #852E4E; margin-top: 0.25rem;">AWS S3 + Spark + Athena + Terraform + Power BI</p>
+        <p style="color: #852E4E; margin-top: 0.5rem; font-size: 1rem;">I set up a cloud-based data lakehouse using AWS tools like S3, Spark, and Athena to handle large amounts of retail data. It helps organize and analyze millions of product records efficiently. I used Power BI to show seasonal and category-based sales trends in a clear, visual way.<i><u> click here to expand</u></i></p>
+      </div>
+    </div>
+
+    <div onclick="openModal('modal7')" style="cursor: pointer; flex: 1 1 45%; max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+      <img src="health.jpg" alt="Project 7" style="width: 100%; height: 250px; object-fit: cover;">
+      <div style="padding: 1rem 1.5rem 1.5rem 1.5rem;">
+        <h3 style="color: #4C1D3D; margin: 0;">Multi-Source Healthcare ETL Framework</h3>
+        <p style="font-size: 0.85rem; font-weight: 600; color: #852E4E; margin-top: 0.25rem;">Snowflake + dbt + GCP BigQuery + Airflow</p>
+        <p style="color: #852E4E; margin-top: 0.5rem; font-size: 1rem;">I built a flexible data pipeline to combine healthcare data from different systems like EMR, claims, and CRM. Using Snowflake, BigQuery, dbt, and Airflow, I made it easier for analytics teams to run reports. This helped reduce errors and made patient-related insights faster and more accurate.<i><u> click here to expand</u></i></p>
+      </div>
+    </div>
+
+    <div onclick="openModal('modal8')" style="cursor: pointer; flex: 1 1 45%; max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+      <img src="truck.jpg" alt="Project 8" style="width: 100%; height: 250px; object-fit: cover;">
+      <div style="padding: 1rem 1.5rem 1.5rem 1.5rem;">
+        <h3 style="color: #4C1D3D; margin: 0;">Truck-Fleet-Analysis</h3>
+        <p style="font-size: 0.85rem; font-weight: 600; color: #852E4E; margin-top: 0.25rem;">Apache Hadoop + Impala + Tableau</p>
+        <p style="color: #852E4E; margin-top: 0.5rem; font-size: 1rem;">I worked on a project that helps a trucking company monitor driver behavior using telematics data. We tracked things like speeding, lane changes, mileage, and driving patterns to spot unsafe behavior. The goal was to keep drivers safe and improve how the company runs its fleet.<i><u> click here to expand</u></i></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Modal Template -->
+<div id="modal1" class="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:9999;">
+  <div class="modal-content" style="
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 2rem;
+    border-radius: 16px;
+    background-color: white;
+    margin: 5% auto;
+    width: 80%;
+    font-family: 'Source Serif 4', serif;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #4C1D3D;
+    scroll-behavior: smooth;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  ">
+
+    <style>
+      .modal-content::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .modal-content::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 8px;
+      }
+
+      .modal-content::-webkit-scrollbar-track {
+        background: transparent;
+      }
+    </style>
+
+    <span onclick="closeModal('modal1')" style="float:right; font-size:1.5rem; cursor:pointer;">&times;</span>
+
+    <h2 style="margin-top: 0;">Dynamic Hotel Pricing Engine</h2>
+
+    <p><b>Dynamic Hotel Pricing Engine</b></p>
+
+    <p><b>Project Motivation</b><br>
+      In the post-COVID hospitality landscape, hotels have been aggressively trying to recover lost revenue while managing unpredictable booking patterns. During my internship, I observed that many hotels still relied on static pricing models that ignored crucial real-time variables like local events, seasonality, weather, and competitor pricing. I wanted to build a system that could dynamically adjust prices using historical and real-time data, helping hotel managers make smarter revenue decisions. The idea was to build an intelligent, data-driven hotel pricing engine that could analyze seasonality, demand trends, and competitive rates to optimize room pricing.
+    </p>
+
+    <p><b>My Role</b><br>
+      I independently conceptualized and executed this project from scratch. I was responsible for the entire data science pipeline including data sourcing, cleaning, model building, testing, visualization, and final deployment of insights via Tableau. I took the role of a full-stack data analyst and data scientist here, playing product owner, data engineer, and analyst simultaneously.
+    </p>
+
+    <p><b>Tools & Technologies Used</b><br>
+      • <b>Python</b> (pandas, scikit-learn, statsmodels) for regression analysis and time series forecasting.<br>
+      • <b>Tableau</b> for interactive data visualization and real-time pricing dashboards.<br>
+      • <b>Jupyter Notebook</b> for experimentation and model tracking.<br>
+      • <b>Excel</b> as a reference point for early testing and validating pricing scenarios manually.
+    </p>
+
+    <p>I chose Python because of its vast libraries for machine learning and its flexibility in data preprocessing. I used Tableau for its simplicity and powerful drill-down capabilities that hotel managers could use without deep technical knowledge.</p>
+
+    <p><b>Alternative Tools Considered</b><br>
+      I briefly evaluated Power BI for visualization, but Tableau’s drag-and-drop interface and time series forecasting capabilities gave it an edge for this use case. I also considered building the model in R (using <i>forecast</i> and <i>prophet</i>), but Python allowed better integration with the data cleaning and wrangling pipeline. For more complex use cases, tools like Google OR-Tools or advanced reinforcement learning systems could be used, but they were too heavy for this specific goal.
+    </p>
+
+    <p><b>Approach & Process</b></p>
+    <ul>
+      <li><b>Data Collection:</b> Gathered historical pricing data from public hotel booking APIs, scraped competitor pricing from online travel agencies, and incorporated weather/event schedules.</li>
+      <li><b>Preprocessing:</b> Cleaned missing values, handled outliers using IQR method, and created dummy variables for categorical factors like season, location, and room type.</li>
+      <li><b>Feature Engineering:</b> Engineered lag variables, applied rolling averages to smooth trends, and created pricing bands for day-of-week and event proximity.</li>
+      <li><b>Modeling:</b> Built multivariate linear regression model for transparency. Experimented with ARIMA and Exponential Smoothing for comparison. Used cross-validation RMSE for model selection.</li>
+      <li><b>Evaluation:</b> Final regression model had an R² of 0.87. Deviation from optimal prices was within 6% on a holdout set.</li>
+      <li><b>Dashboarding:</b> Designed an interactive Tableau dashboard with filters for seasonality, events, and occupancy. Included sliders to simulate competitor impact and demand levels.</li>
+    </ul>
+
+    <p><b>Results & Impact</b><br>
+      • Revenue projections improved by ~14% over traditional static pricing models.<br>
+      • Managers could simulate pricing strategies visually and react to changing demand.<br>
+      • Reduced time spent on manual spreadsheet updates from 4 hours/week to 15 minutes using the dashboard.
+    </p>
+
+    <p><b>Challenges Faced</b><br>
+      • Scraping hotel booking sites involved rate limits, requiring retry logic.<br>
+      • Sparse or incomplete event data forced me to create proxy variables (e.g., sports season indicators).<br>
+      • Translating complex model outputs into simple visual insights took multiple user interviews and dashboard redesigns.
+    </p>
+
+    <p><b>Lessons Learned</b><br>
+      • Even the best model is useless without user trust—visualization and explainability matter.<br>
+      • Pricing strategies must account for both high-demand surge and low-demand discounting.<br>
+      • Early user feedback improves usability—my dashboard improved significantly after mock interviews with hotel staff personas.
+    </p>
+
+    <p><b>Conclusion</b><br>
+      This project taught me how to go from raw data to actionable business tools. It helped bridge the gap between analytics and operations by delivering insights in a form hotel teams could actually use. The system is scalable and can be extended to other dynamic pricing domains like ride-hailing, airfares, or event ticketing. Above all, it reminded me that data science isn’t just about models—it’s about enabling decisions.
+    </p>
+  </div>
+</div>
+
+<!-- Modal Template -->
+<div id="modal2" class="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:9999;">
+  <div class="modal-content" style="
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 2rem;
+    border-radius: 16px;
+    background-color: white;
+    margin: 5% auto;
+    width: 80%;
+    font-family: 'Source Serif 4', serif;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #4C1D3D;
+    scroll-behavior: smooth;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  ">
+
+    <style>
+      .modal-content::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .modal-content::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 8px;
+      }
+
+      .modal-content::-webkit-scrollbar-track {
+        background: transparent;
+      }
+    </style>
+
+    <span onclick="closeModal('modal2')" style="float:right; font-size:1.5rem; cursor:pointer;">&times;</span>
+
+    <h2 style="margin-top: 0;">Marketing Funnel Optimization 🍜</h2>
+
+    <p><b>Let Me Paint a Picture</b><br>
+    Imagine a bustling cloud kitchen in Koramangala, Bangalore. It’s Friday night. Orders are flying in through Zomato and Swiggy. But here’s the twist: while 10,000 people view the menu, only 500 actually place an order. Somewhere between <i>Add to Cart</i> and <i>Place Order</i>, interest evaporates.
+    </p>
+
+    <p>That’s what many marketing funnels feel like. Clicks come in. Impressions look good. But conversions? Meh. It’s like prepping 1,000 biryanis and watching 900 go cold. This project was about <b>finding where the heat is lost</b>, and fixing it.</p>
+
+    <p><b>What I Set Out To Do</b><br>
+    Not just make a dashboard with KPIs. I wanted to <b>build a full optimization system</b>-one that:
+      <ul>
+        <li>Uncovered hidden funnel drop-offs</li>
+        <li>Quantified the exact "why" behind user falloff</li>
+        <li>Let teams experiment like a kitchen trying new recipes-and see results <i>before</i> serving them to customers</li>
+      </ul>
+    </p>
+
+    <p><b>My Role</b><br>
+    I was the data chef here-from strategy to plating. I sliced through noise, simmered data models, and served insights that teams could actually act on. From cleaning the data pantry to garnishing the final Power BI dashboard, this was my kitchen.
+    </p>
+
+    <p><b>Tools I Used (and Why)</b><br>
+    • <b>Power BI</b>: Fast and user-friendly for non-tech teams-perfect for exec reviews.<br>
+    • <b>Python</b> (pandas, sklearn, scipy): To run A/B tests, build regressions, and simulate behavior changes.<br>
+    • <b>Excel</b>: Quick validations and budget impact models.<br>
+    <br>
+    I skipped Tableau for this one-Power BI just meshed better with the team’s daily tooling.
+    </p>
+
+    <p><b>Recipe for Funnel Optimization</b></p>
+    <ul>
+      <li><b>Awareness → Consideration → Intent → Conversion</b>: Broke the funnel into these 4 stages</li>
+      <li>Defined KPIs for each: bounce rate, CTA clicks, conversion delays</li>
+      <li>Ran A/B tests to refine UX-like CTA timing and design</li>
+      <li>Used logistic regression for conversion prediction</li>
+      <li>Simulated "What if we did X?" scenarios for forecasted impact</li>
+    </ul>
+
+    <p><b>Results That Stuck</b><br>
+    • 28% improvement in ROI prediction accuracy<br>
+    • Real-time simulation of what-if changes<br>
+    • 15% increase in conversions by repositioning CTAs<br>
+    • Redirected budget from low-performing campaigns → 15% increase in quality leads
+    </p>
+
+    <p><b>Bonus Discoveries</b><br>
+    • Mobile users behaved differently-CTAs needed a different layout<br>
+    • Fear-based CTAs ("Last chance!") underperformed in health & wellness campaigns
+    </p>
+
+    <p><b>What I Learned</b><br>
+    • Funnels are behavioral systems-not just dashboards<br>
+    • Great experiments fail if no one understands the results<br>
+    • Blend data with design to tell stories teams can believe in
+    </p>
+
+    <p><b>Looking Ahead</b><br>
+    I’m expanding this to:
+      <ul>
+        <li>Multi-channel funnel analysis: Email + SMS + In-app</li>
+        <li>UX heuristics + heatmap insights</li>
+        <li>Causal modeling to get closer to "why" behind behavior</li>
+      </ul>
+    </p>
+
+    <p>This wasn’t just analytics-it was <b>behavioral economics in a Bangalore-sized cloud kitchen</b>. And now, when I look at a leaky funnel, I don’t just patch it-I ask, “What ingredient is missing in the recipe?”</p>
+
+  </div>
+</div>
+
+<!-- Modal Template -->
+<div id="modal3" class="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:9999;">
+  <div class="modal-content" style="
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 2rem;
+    border-radius: 16px;
+    background-color: white;
+    margin: 5% auto;
+    width: 80%;
+    font-family: 'Source Serif 4', serif;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #4C1D3D;
+    scroll-behavior: smooth;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  ">
+
+    <style>
+      .modal-content::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .modal-content::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 8px;
+      }
+
+      .modal-content::-webkit-scrollbar-track {
+        background: transparent;
+      }
+    </style>
+
+    <span onclick="closeModal('modal3')" style="float:right; font-size:1.5rem; cursor:pointer;">&times;</span>
+
+    <h2 style="margin-top: 0;">Fraud Detection Engine for Credit Card Transactions</h2>
+
+    <p><b>Why I Built This</b></p>
+    <p>
+      This project started when I experienced a real credit card fraud incident in my family. One of my relatives had an unknown international transaction go through, and it wasn’t flagged. The bank only noticed two days later. That moment made me ask myself: how do fraud systems work, and why do they sometimes miss obvious patterns? 
+      I wanted to see if I could train a machine learning model to detect fraud better and faster.
+    </p>
+
+    <p><b>What I Actually Built</b></p>
+    <p>
+      I built a fraud detection engine using two models:
+      <ul>
+        <li><b>XGBoost</b> for supervised learning on labeled transaction data</li>
+        <li><b>Isolation Forest</b> for anomaly detection based on unusual patterns</li>
+      </ul>
+      I used a dataset with over 280,000 transactions where only a small percentage were fraud. This was very realistic and made the problem more challenging.
+    </p>
+
+    <p><b>Why XGBoost, Not Random Forest?</b></p>
+    <p>
+      I actually tested both. Random Forest gave decent accuracy, but:
+      <ul>
+        <li>It struggled more with class imbalance</li>
+        <li>Training took longer</li>
+        <li>It had a higher rate of false positives</li>
+      </ul>
+      XGBoost worked better because:
+      <ul>
+        <li>It handled imbalanced data more effectively</li>
+        <li>It allowed weighting of the fraud class</li>
+        <li>It reduced false positives by about 34 percent compared to Random Forest</li>
+      </ul>
+    </p>
+
+    <p><b>How I made it the best?</b></p>
+    <p>
+      I didn’t just build a basic model. I:
+      <ul>
+        <li>Split the data into training and test sets</li>
+        <li>Used SMOTE and undersampling to balance the classes</li>
+        <li>Tuned XGBoost parameters using grid search</li>
+        <li>Measured performance using precision, recall, and F1-score</li>
+        <li>Combined XGBoost with Isolation Forest for dual-layer detection</li>
+      </ul>
+    </p>
+
+    <p><b>Results</b></p>
+    <ul>
+      <li>Recall improved by 34 percent compared to baseline Random Forest</li>
+      <li>False positives were significantly reduced</li>
+      <li>The system flagged potential fraud cases within seconds</li>
+    </ul>
+
+    <p><b>What I Learned</b></p>
+    <ul>
+      <li>Fraud detection is about catching the right things, not everything</li>
+      <li>XGBoost is powerful but needs proper tuning to avoid overfitting</li>
+      <li>Class imbalance requires more than just a good algorithm, it needs smart sampling and careful evaluation</li>
+    </ul>
+
+  </div>
+</div>
+
+<!-- Modal Template -->
+<div id="modal4" class="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:9999;">
+  <div class="modal-content" style="
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 2rem;
+    border-radius: 16px;
+    background-color: white;
+    margin: 5% auto;
+    width: 80%;
+    font-family: 'Source Serif 4', serif;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #4C1D3D;
+    scroll-behavior: smooth;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  ">
+
+    <style>
+      .modal-content::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .modal-content::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 8px;
+      }
+
+      .modal-content::-webkit-scrollbar-track {
+        background: transparent;
+      }
+    </style>
+
+    <span onclick="closeModal('modal4')" style="float:right; font-size:1.5rem; cursor:pointer;">&times;</span>
+
+    <h2 style="margin-top: 0;">Corporate Planning Tracker</h2>
+
+    <p><b>Why I Built This</b><br>
+      During my time at Cognizant, I was constantly juggling tasks, deadlines, and scattered project updates. I always wished there was a centralized tracker — not something for personal habits or goals, but a professional dashboard that gave me a clear view of who was doing what, by when, and why. That idea stayed with me. I decided to build a planning system tailored specifically for internal teams to monitor projects and KPIs in one place.
+    </p>
+
+    <p><b>Inspiration</b><br>
+      Most planning tools are either too generic (like Google Calendar) or too bloated (like Jira). I wanted something clean, visual, and tied directly to team performance. This was my answer to the chaos I experienced daily, and it became one of my favorite side projects.
+    </p>
+
+    <p><b>System Architecture</b><br>
+      I used Google Sheets as the raw input layer since it's easy for anyone to update. BigQuery served as the central data warehouse. I used dbt to clean and transform the data into useful models. Cloud Composer automated the whole process daily. A Power BI-style dashboard (custom build) sat on top to help teams track progress with filters, trendlines, and KPI summaries.
+    </p>
+
+    <p><b>Tools I Used</b><br>
+      • <b>BigQuery</b> to manage and warehouse all incoming planning data.<br>
+      • <b>dbt</b> to clean, model, and transform raw sheets into usable data tables.<br>
+      • <b>Cloud Composer</b> to automate data loading every morning before the workday.<br>
+      • <b>Custom KPI Dashboard</b> built with filters, charts, team-wise views, and delivery timelines.
+    </p>
+
+    <p><b>What It Actually Did</b></p>
+    <ul>
+      <li>Integrated 12+ team-specific spreadsheets into one consistent data model.</li>
+      <li>Created alerts for overdue tasks, stuck projects, and missing owners.</li>
+      <li>Enabled monthly reports without manual effort using automatic dbt runs.</li>
+    </ul>
+
+    <p><b>Outcomes</b><br>
+      • Reduced manager check-in time by 40 percent since everything was visible on the dashboard.<br>
+      • Team productivity improved — people knew what was expected and by when.<br>
+      • Made handovers and escalations smoother, since everything was documented and timestamped.
+    </p>
+
+    <p><b>What I Learned</b><br>
+      • People love simplicity. The biggest compliments I got were about how clean and intuitive the tracker was.<br>
+      • Automation reduces mental load. By scheduling ETL through Cloud Composer, I removed the need for anyone to “maintain” the system manually.<br>
+      • Designing for real teams is different from building a tool for yourself. I had to iterate a lot after watching how different teams used the same interface differently.
+    </p>
+
+    <p><b>Final Thought</b><br>
+      This project let me blend data engineering with real user-centric thinking. It wasn’t about flashy tech — it was about making work life easier. That’s what made it fulfilling.
+    </p>
+  </div>
+</div>
+
+<!-- Modal 5 -->
+<div id="modal5" class="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:9999;">
+  <div class="modal-container" style="
+    position: relative;
+    margin: 5% auto;
+    width: 80%;
+    max-height: 85vh;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 16px;
+    padding: 2rem;
+    font-family: 'Source Serif 4', serif;
+    color: #4C1D3D;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    scroll-behavior: smooth;
+  ">
+
+    <!-- Scrollbar styling -->
+    <style>
+      .modal-container::-webkit-scrollbar {
+        width: 8px;
+      }
+      .modal-container::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 8px;
+      }
+      .modal-container::-webkit-scrollbar-track {
+        background: transparent;
+      }
+    </style>
+
+    <!-- Close button -->
+    <span onclick="document.getElementById('modal5').style.display='none'" style="position: absolute; top: 1rem; right: 1.5rem; font-size: 1.5rem; cursor: pointer;">&times;</span>
+
+    <!-- Content -->
+    <h2 style="margin-top: 0;">Streaming Order Analytics Platform</h2>
+
+    <p>
+      This project started with a simple question. What if we could track orders as they happen in real time instead of waiting for end-of-day reports? That idea pushed me to create a streaming data pipeline that connects all the way from the point of sale to a dashboard anyone can understand.
+    </p>
+
+    <p>
+      I used Apache Kafka to capture every new order event as soon as it occurred. These events were processed and pushed to AWS Redshift using Airflow. From there, I created SQL views and Tableau dashboards that helped different teams monitor things like sales delays, region-wise performance, or peak order times with just a glance.
+    </p>
+
+    <p>
+      The dashboards gave near real-time visibility and helped the operations team act quickly. If a region was falling behind on deliveries or a product's sales dropped unexpectedly, they could catch it instantly instead of discovering it days later.
+    </p>
+
+    <p>
+      I learned that data doesn’t just need to be accurate. It has to be timely and simple to act on. This project taught me how crucial speed is in data pipelines and how tools like Kafka and Airflow help turn data into quick decisions.
+    </p>
+
+  </div>
+</div>
+
+
+
+
+<div id="modal6" class="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:9999;">
+  <div class="modal-content" style="
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 2rem;
+    border-radius: 16px;
+    background-color: white;
+    margin: 5% auto;
+    width: 80%;
+    font-family: 'Source Serif 4', serif;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #4C1D3D;
+    scroll-behavior: smooth;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  ">
+
+    <style>
+      .modal-content::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .modal-content::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 8px;
+      }
+
+      .modal-content::-webkit-scrollbar-track {
+        background: transparent;
+      }
+    </style>
+
+    <span onclick="closeModal('modal6')" style="float:right; font-size:1.5rem; cursor:pointer;">&times;</span>
+
+    <h2 style="margin-top: 0;">Cloud-Native Data Lakehouse for Retail Insights</h2>
+
+    <p><b>Why I Built This</b><br>
+      With retail businesses generating massive volumes of data across stores and seasons, I wanted to explore how cloud-native tools could help handle and make sense of it all. This project was my way of learning how modern companies build scalable, modular data platforms using the cloud.
+    </p>
+
+    <p><b>Inspiration</b><br>
+      Most traditional data systems struggle to keep up with the speed and size of modern retail data. I was inspired to build something that could efficiently store raw data, process it quickly, and deliver actionable insights — all without needing expensive hardware or legacy infrastructure.
+    </p>
+
+    <p><b>System Architecture</b><br>
+      AWS S3 served as the raw data lake. I used Spark to clean and prepare datasets at scale, and Athena to query the processed data using SQL. Terraform managed the infrastructure setup. Finally, I built visual reports in Power BI to showcase sales trends, seasonal spikes, and category-level performance.
+    </p>
+
+    <p><b>Tools I Used</b><br>
+      • <b>AWS S3</b> to store large volumes of retail data in a flexible, scalable way.<br>
+      • <b>Apache Spark</b> for batch data processing and cleaning.<br>
+      • <b>Athena</b> to query data directly from S3 using SQL.<br>
+      • <b>Terraform</b> to spin up and configure all AWS resources automatically.<br>
+      • <b>Power BI</b> to present insights with filters for time, region, and product category.
+    </p>
+
+    <p><b>What It Actually Did</b></p>
+    <ul>
+      <li>Processed and analyzed 1M+ product-level transactions from mock retail datasets.</li>
+      <li>Revealed clear sales patterns by season and product category, using interactive dashboards.</li>
+      <li>Enabled quick queries using Athena without needing a traditional database engine.</li>
+    </ul>
+
+    <p><b>Outcomes</b><br>
+      • Built a fully cloud-native data lakehouse that could scale easily with business needs.<br>
+      • Made it easy to slice and explore large retail datasets without complex setup.<br>
+      • Helped me understand real-world applications of Spark, S3, and serverless querying.
+    </p>
+
+    <p><b>What I Learned</b><br>
+      • How to design a modular pipeline from raw storage to dashboard, end to end.<br>
+      • How serverless tools like Athena can speed up analytics without high cost.<br>
+      • Why infrastructure-as-code (Terraform) is essential for reproducibility in cloud projects.
+    </p>
+
+    <p><b>Final Thought</b><br>
+      This project taught me how to think like a data engineer — building scalable systems, automating everything, and making data easy to access. Seeing a dashboard light up with insights from millions of rows was honestly the most rewarding part.
+    </p>
+  </div>
+</div>
+
+
+</div>
+<div id="modal7" class="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:9999;">
+  <div class="modal-content" style="
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 2rem;
+    border-radius: 16px;
+    background-color: white;
+    margin: 5% auto;
+    width: 80%;
+    font-family: 'Source Serif 4', serif;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #4C1D3D;
+    scroll-behavior: smooth;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  ">
+
+    <style>
+      .modal-content::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .modal-content::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 8px;
+      }
+
+      .modal-content::-webkit-scrollbar-track {
+        background: transparent;
+      }
+    </style>
+
+    <span onclick="closeModal('modal7')" style="float:right; font-size:1.5rem; cursor:pointer;">&times;</span>
+
+    <h2 style="margin-top: 0;">Multi-Source Healthcare ETL Framework</h2>
+
+    <p><b>Why I Built This</b><br>
+      In healthcare, data lives in silos — EMR systems, claims databases, patient CRMs. This fragmentation delays insights and increases the chance of error. I wanted to build an end-to-end ETL pipeline that could bring these sources together and make data more reliable and useful for analytics and care improvement.
+    </p>
+
+    <p><b>Inspiration</b><br>
+      I saw how scattered and messy healthcare data can be during my prior projects and case studies. Teams spent more time cleaning and stitching data than actually analyzing it. My goal was to build something reusable and production-ready that would cut through this chaos.
+    </p>
+
+    <p><b>System Architecture</b><br>
+      Raw healthcare data (EMR, CRM, and claims) was loaded into BigQuery. dbt was used to transform and clean it into patient-centric models. Airflow handled DAGs for scheduled ingestion and transformation. Snowflake served as the structured warehouse layer where analytics and dashboards could query standardized views.
+    </p>
+
+    <p><b>Tools I Used</b><br>
+      • <b>GCP BigQuery</b> to stage raw healthcare records at scale.<br>
+      • <b>dbt</b> to clean and model data into curated patient, visit, and claims tables.<br>
+      • <b>Apache Airflow</b> to schedule and orchestrate all extraction and transformation workflows.<br>
+      • <b>Snowflake</b> to serve clean, analytics-ready data through centralized schemas for reporting.
+    </p>
+
+    <p><b>What It Actually Did</b></p>
+    <ul>
+      <li>Combined 3+ data sources (EMR, CRM, claims) into a unified, queryable warehouse.</li>
+      <li>Created modular dbt models for patient events, visit summaries, and billing cycles.</li>
+      <li>Automated pipeline runs daily using Airflow, ensuring fresh data without manual work.</li>
+    </ul>
+
+    <p><b>Outcomes</b><br>
+      • Reduced the time to generate patient reports by over 60% for simulated analysts.<br>
+      • Improved schema standardization — made it easier for downstream teams to work with clean, consistent fields.<br>
+      • Flagged 1,000+ rows with potential mismatches between EMR and claims datasets.
+    </p>
+
+    <p><b>What I Learned</b><br>
+      • How to coordinate multiple ingestion points into one clean pipeline without data loss.<br>
+      • That dbt really shines in healthcare, where repeatable transformations are critical.<br>
+      • Why orchestration matters — Airflow kept everything clean, timely, and hands-off.
+    </p>
+
+    <p><b>Final Thought</b><br>
+      This project taught me how to bridge messy real-world data and structured analytics systems. It wasn’t just an ETL exercise — it was about helping people get the right answers faster in an industry where timing matters.
+    </p>
+  </div>
+</div>
+
+</div>
+<div id="modal8" class="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); z-index:9999;">
+  <div class="modal-content" style="
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 2rem;
+    border-radius: 16px;
+    background-color: white;
+    margin: 5% auto;
+    width: 80%;
+    font-family: 'Source Serif 4', serif;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #4C1D3D;
+    scroll-behavior: smooth;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  ">
+
+    <style>
+      .modal-content::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .modal-content::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 8px;
+      }
+
+      .modal-content::-webkit-scrollbar-track {
+        background: transparent;
+      }
+    </style>
+
+    <span onclick="closeModal('modal8')" style="float:right; font-size:1.5rem; cursor:pointer;">&times;</span>
+
+    <h2 style="margin-top: 0;">Truck-Fleet Analysis (Big Data Project)</h2>
+
+    <p><b>What Stood Out</b><br>
+      This project was part of my Big Data coursework, where we explored how large-scale telematics data could be used to monitor fleet performance. What stood out was the opportunity to apply Apache Hadoop and Impala to real-world data collected from hundreds of delivery trucks—mileage, speed, braking, lane changes, and more.
+    </p>
+
+    <p><b>Why Driver Behavior Mattered</b><br>
+      Speeding, sharp turns, sudden braking—these aren't just numbers on a report. They directly impact safety, fuel efficiency, and maintenance costs. By analyzing driving patterns, we were able to flag risky behaviors early, allowing the fleet managers to take preventive steps instead of reacting after something went wrong.
+    </p>
+
+    <p><b>How It Helped the Company</b><br>
+      The insights helped the trucking company improve driver safety metrics by 20%. They could now proactively coach drivers, reduce accident risks, and align their fleet management strategy with long-term KPIs. It also made insurance reporting and regulatory compliance much smoother.
+    </p>
+
+    <p><b>My Role</b><br>
+      I was responsible for building and running the Hadoop jobs that processed large volumes of telematics data. I used Impala to query the refined datasets and collaborated with the team on cleaning and structuring the data into actionable reports.
+    </p>
+
+    <p><b>Key Tools Used</b><br>
+      • Apache Hadoop for storing and processing raw telematics logs<br>
+      • Impala for fast SQL-like querying on large datasets<br>
+      • Tableau (optional mention if needed) for visualization of driver-level KPIs
+    </p>
+
+  </div>
+</div>
+
+</div>
+<script>
+  function openModal(id) {
+    document.getElementById(id).style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+</script>
+
+<hr class="gradient-line" />
+
+
+<section id="experience" style="background-color: #FFFFFF; padding: 2rem; border-radius: 12px;">
+  <h2 style="color: #4C1D3D; text-align: center;">Professional Experience</h2>
+
+  <div style="position: relative; margin-top: 1rem; padding: 2rem; display: flex; justify-content: center;">
+    <div style="max-width: 1200px; width: 100%;">
+  
+
+    <!-- Horizontal timeline line -->
+    <div style="position: absolute; top: 40px; left: 5%; right: 5%; height: 4px; background-color: #4C1D3D; z-index: 0;"></div>
+
+    <!-- Timeline horizontal cards -->
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; position: relative; z-index: 2; gap: 1rem;">
+
+      <!-- Each timeline item -->
+      <div style="text-align: center; width: 100%; min-width: 20px;">
+        <!-- Circle and date -->
+        <div style="position: relative; z-index: 2; margin-bottom: 1rem;">
+          <div style="width: 20px; height: 20px; background-color: white; border: 4px solid #852E4E; border-radius: 50%; margin: 0 auto;"></div>
+          <div style="margin-top: 0.3rem; font-weight: bold; color: #4C1D3D;">Feb 2025 – May 2025</div>
+        </div>
+        <!-- Card content -->
+        <div class="experience-card">
+
+          <h3 style="margin: 0;">Nuvento Inc</h3>
+          <p style="margin: 0.2rem 0; font-weight: bold;">Data Engineer Intern</p>
+          <p style="margin-top: 0.6rem;">Supported an education client’s shift to modular school performance reporting, working alongside BI and product teams to streamline data across districts.</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; width: 30%; min-width: 280px;">
+        <div style="position: relative; z-index: 2; margin-bottom: 1rem;">
+          <div style="width: 20px; height: 20px; background-color: white; border: 4px solid #852E4E; border-radius: 50%; margin: 0 auto;"></div>
+          <div style="margin-top: 0.3rem; font-weight: bold; color: #4C1D3D;">Sep 2021 – Jul 2023</div>
+        </div>
+        
+        <div class="experience-card">
+          <h3 style="margin: 0;">Cognizant</h3>
+          <p style="margin: 0.2rem 0; font-weight: bold;">Business Intelligence Engineer</p>
+          <p style="margin-top: 0.6rem;">Worked with a UK energy provider to uncover churn patterns and improve reporting pipelines, blending analytics with business context in a fast-paced delivery setup.</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; width: 30%; min-width: 280px;">
+        <div style="position: relative; z-index: 2; margin-bottom: 1rem;">
+          <div style="width: 20px; height: 20px; background-color: white; border: 4px solid #852E4E; border-radius: 50%; margin: 0 auto;"></div>
+          <div style="margin-top: 0.3rem; font-weight: bold; color: #4C1D3D;">Aug 2020 – Sep 2020</div>
+        </div>
+        <div class="experience-card">
+          <h3 style="margin: 0;">Unique Tech Designs</h3>
+          <p style="margin: 0.2rem 0; font-weight: bold;">Data Analyst Intern</p>
+          <p style="margin-top: 0.6rem;">Helped a hardware and IoT team analyze device diagnostics to understand early failures and inform product pricing decisions.</p>
+        
+        </div>
+
+        <div style="
+        position: relative;
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background-color: #fceef5;
+        color: #4C1D3D;
+        font-size: 0.95rem;
+        font-style: italic;
+        border-radius: 8px 0 0 8px;
+        margin-top: 1.25rem;
+        max-width: 280px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      ">
+        📎 Check the rest on 
+        <a href="https://www.linkedin.com/in/ananyasrinathachar/" target="_blank" style="color: #4C1D3D; text-decoration: underline; font-weight: bold;">LinkedIn</a>
+        <div style="
+          content: '';
+          position: absolute;
+          right: -20px;
+          top: 0;
+          width: 0;
+          height: 100%;
+          border-top: 20px solid transparent;
+          border-bottom: 20px solid transparent;
+          border-left: 20px solid #fceef5;
+          clip-path: polygon(0 0, 100% 50%, 0 100%);
+        "></div>
+      <style>
+        .experience-card {
+          background-color: #FFFFFF;
+          border: 1px solid #E0E0E0;
+          padding: 1.5rem;
+          border-radius: 12px;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+          color: #4C1D3D;
+          transition: all 0.2s ease-in-out;
+          height: 100%;
+        }
+      
+        .experience-card:hover {
+          box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+          transform: translateY(-4px);
+        }
+      </style>
+      
+      
+      </div>
+      
+
+      </div>
+
+    </div>
+  </div>
+</section>
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skills</title>
+  <style>
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .skill-item {
+      text-align: center;
+      font-family: sans-serif;
+    }
+    .skill-item img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 8px;
+    }
+    .skill-item .label {
+      font-size: 0.9rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="skills-section" style="padding: 2rem;">
+    <h2 style="color: #4C1D3D; text-align: center; font-size: 2rem; margin-bottom: 1.5rem;">My Tech Stack</h2>
+  
+    <div class="skills-grid" style="
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 1.5rem;
+      justify-items: center;
+      align-items: center;
+      max-width: 1000px;
+      margin: auto;
+    ">
+    <div class="skill-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+      <div class="label">Python</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://www.techmonitor.ai/wp-content/uploads/sites/29/2016/06/SQL.png" alt="SQL">
+      <div class="label">SQL</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R">
+      <div class="label">R</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://img.icons8.com/color/48/power-bi.png" alt="Power BI">
+      <div class="label">Power BI</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://img.icons8.com/color/48/tableau-software.png" alt="Tableau">
+      <div class="label">Tableau</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://img.icons8.com/color/48/microsoft-excel-2019--v1.png" alt="Excel">
+      <div class="label">Excel</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://airflow.apache.org/docs/apache-airflow/1.10.15/_images/pin_large.png" alt="Airflow">
+      <div class="label">Airflow</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://cdn.prod.website-files.com/61f0f48a97255128fb175a87/66fe93b1bfb31a334b51d548_Big-query-logo.png" alt="BigQuery">
+      <div class="label">BigQuery</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Amazon-Redshift-Logo.svg/1862px-Amazon-Redshift-Logo.svg.png" alt="Redshift">
+      <div class="label">Redshift</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/DynamoDB.png" alt="DynamoDB">
+      <div class="label">DynamoDB</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://dragonboat.io/wp-content/uploads/2021/12/azure-devops-color-icon.png" alt="Azure DevOps">
+      <div class="label">Azure DevOps</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://img.icons8.com/color/48/snowflake.png" alt="Snowflake">
+      <div class="label">Snowflake</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://www.bigdatawire.com/wp-content/uploads/2014/10/spark-logo_2.png" alt="Spark">
+      <div class="label">Spark</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hadoop/hadoop-original.svg" alt="Hadoop">
+      <div class="label">Hadoop</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://miro.medium.com/v2/resize:fit:1400/1*vQ3ynmWVM-V3mpRyVEKufg.png" alt="Hive">
+      <div class="label">Hive</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Apache_Kafka_logo.svg/1200px-Apache_Kafka_logo.svg.png" alt="Kafka">
+      <div class="label">Kafka</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://prestodb.io/wp-content/uploads/site-image.png" alt="Presto">
+      <div class="label">Presto</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://data.world/api/datadotworld-apps/dataset/athena/file/raw/logo.png" alt="Athena">
+      <div class="label">Athena</div>
+    </div>
+    
+    <div class="skill-item">
+      <img src="https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg" alt="Terraform">
+      <div class="label">Terraform</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+      <div class="label">Docker</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes">
+      <div class="label">Kubernetes</div>
+    </div>
+  </section>
+  
+  
+  
+  <style>
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .skill-item {
+    text-align: center;
+    max-width: 90px;
+  }
+  
+  .skill-item img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+  }
+  
+  .label {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #333;
+  }
+    
+
+</style>
+
+
+  
+<hr class="gradient-line" />
+  
+<section id="leadership" class="section" style="background-color: #ffffff; padding: 3rem 0;">
+  <h2 style="text-align: center; font-size: 2.5rem; font-weight: bold; color: #4C1D3D; margin-bottom: 2rem;">
+    ✨ Leadership, Creativity & Recognition
+  </h2>
+  <div style="position: relative;">
+    <button class="carousel-button prev" onclick="scrollCarousel('left')">❮</button>
+    <div class="carousel" id="leadership-carousel">
+      <div class="carousel-card">
+        <img src="images/wtm.png" alt="WTM Ambassador" class="carousel-image">
+        <h3 class="carousel-title">WTM Ambassador</h3>
+        <p class="carousel-subtitle">Google | Advocacy</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/37f4ITSlgPX81ad2EvmVQr?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="carousel-card">
+        <img src="images/author.png" alt="Author" class="carousel-image">
+        <h3 class="carousel-title">Published Author</h3>
+        <p class="carousel-subtitle">Amazon | Storytelling</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1c8gk2PeTE04A1pIDH9YMk?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="carousel-card">
+        <img src="images/utdlead.png" alt="UTD Leader" class="carousel-image">
+        <h3 class="carousel-title">UTD Student Leader</h3>
+        <p class="carousel-subtitle">UT Dallas | Leadership</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/29ZAW0BAp6O4C6fUncCjBk?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="carousel-card">
+        <img src="images/chartwells.png" alt="Chartwells" class="carousel-image">
+        <h3 class="carousel-title">Chartwells Officer</h3>
+        <p class="carousel-subtitle">UT Dallas | Student Engagement</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4nVBt6MZDDP6tRVdQTgxJg?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="carousel-card">
+        <img src="images/uandi.png" alt="U&I" class="carousel-image">
+        <h3 class="carousel-title">U&I Circle Leader</h3>
+        <p class="carousel-subtitle">Community | Volunteering</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3DamFFqW32WihKkTVlwTYQ?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="carousel-card">
+        <img src="images/ambassador.png" alt="Women Techmakers" class="carousel-image">
+        <h3 class="carousel-title">Women Techmakers</h3>
+        <p class="carousel-subtitle">Google | Advocacy</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3AJwUDP919kvQ9QcozQPxg?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="carousel-card">
+        <img src="images/research.png" alt="Research" class="carousel-image">
+        <h3 class="carousel-title">Research Presenter</h3>
+        <p class="carousel-subtitle">ICICS Conference | Springer</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7MXVkk9YMctZqd1Srtv4MB?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="carousel-card">
+        <img src="images/intern.png" alt="Intern" class="carousel-image">
+        <h3 class="carousel-title">Market Research Intern</h3>
+        <p class="carousel-subtitle">Marketing | Analysis</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0pqnGHJpmpxLKifKRmU6WP?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </div>
+    <button class="carousel-button next" onclick="scrollCarousel('right')">❯</button>
+  </div>
+</section>
+
+<style>
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 0 2rem;
+  gap: 1.5rem;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel-card {
+  flex: 0 0 280px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.carousel-image {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+.carousel-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4C1D3D;
+}
+.carousel-subtitle {
+  color: #9C2F56;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+.carousel-button {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: #741F4E;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+}
+.carousel-button.prev {
+  left: 10px;
+}
+.carousel-button.next {
+  right: 10px;
+}
+.carousel-button:hover {
+  background-color: #6a294f;
+}
+</style>
+
+<script>
+function scrollCarousel(direction) {
+  const carousel = document.getElementById('leadership-carousel');
+  const scrollAmount = 300;
+  if (direction === 'left') {
+    carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  } else {
+    carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  }
+}
+</script>
+
+  
+<hr class="gradient-line" />
+
+  <section id="recommendations" data-aos="fade-up" style="width: 100vw; padding: 4rem 0; background-color: #ffffff; text-align: center; overflow-x: hidden;">
+
+    <h2 style="color: #4C1D3D; margin-bottom: 2rem;">What People Say About Me</h2>
+  
+    <div class="rec-carousel">
+      <div class="rec-track">
+       
+        <div class="rec-card small">
+          <img src="dp-andy.jpg" alt="Andy Helgeson" class="rec-dp">
+          <blockquote>“Ananya has been a great leader and role model for her peers at the Student Union.”</blockquote>
+          <blockquote>“She elevated the spirit and demeanor of the team since joining.”</blockquote>
+          <h4>Andy Helgeson</h4>
+          <p class="rec-title">Supervisor at UT Dallas Student Union</p>
+        </div>
+        <div class="rec-card small">
+          <img src="dp-sean.jpg" alt="Sean Collins" class="rec-dp">
+          <blockquote>“Ananya has grown as a person and as a team leader and has made us proud in her accomplishments as a professional.”</blockquote>
+          <blockquote>“Her communication skills and work ethic always supported our efforts here at UTD.”</blockquote>
+          <h4>Sean Collins</h4>
+          <p class="rec-title">Supervisor at UT Dallas Student Union</p>
+        </div>
+        
+        <div class="rec-card small">
+          <img src="dp-tori.jpg" alt="Tori Speer" class="rec-dp">
+          <blockquote>“Ananya was promoted to Student Manager due to her impressive skills and leadership as a Student Employee.”</blockquote>
+          <blockquote>“She serves on the Student Leadership Council and takes the initiative to get things done.”</blockquote>
+          <h4>Tori Speer</h4>
+          <p class="rec-title">Supervisor at UTD Student Union</p>
+        </div>
+        
+        <!-- 1 -->
+        <div class="rec-card small">
+          <img src="dp-brenda.jpg" alt="Brenda Siri" class="rec-dp">
+          <blockquote>“Ananya takes an active interest in learning and gaining knowledge in American Business Practices.”</blockquote>
+          <blockquote>“Her experience with Python, Microsoft Power BI, C++, My SQL, C, HTML, CSS, JavaScript, and Informatica would make her an asset to any organization.”</blockquote>
+          <h4>Brenda Siri</h4>
+          <p class="rec-title">President & CEO, Corporate Connections - Ananya's Professor</p>
+        </div>
+  
+        <!-- 2 -->
+        <div class="rec-card small">
+          <img src="dp-partha.jpg" alt="Parthasaradhi Naidu" class="rec-dp">
+          <blockquote>“I was particularly impressed with her communication skills and ability to deal with challenging situations.”</blockquote>
+          <blockquote>“She will be an excellent asset to the team.”</blockquote>
+          <h4>Parthasaradhi Naidu</h4>
+          <p class="rec-title">Partha directly managed Ananya at Cognizant</p>
+        </div>
+  
+        <!-- 3 -->
+        <div class="rec-card small">
+          <img src="dp-shreya.jpg" alt="Shreya Srinivas" class="rec-dp">
+          <blockquote>“Her clear vision and strategic thinking have been an asset to all the projects she has been a part of.”</blockquote>
+          <blockquote>“I highly recommend Ananya as a leader and believe her contributions would be invaluable to any organization.”</blockquote>
+          <h4>Shreya Srinivas</h4>
+          <p class="rec-title">Shreya managed Ananya at U&I Trust</p>
+        </div>
+  
+        <!-- 4 -->
+        <div class="rec-card small">
+          <img src="dp-mukul.jpg" alt="Mukul Mysore" class="rec-dp">
+          <blockquote>“Full of ideas and her clarity towards problem solving is exemplary.”</blockquote>
+          <blockquote>“One won't find many like Ananya out there.”</blockquote>
+          <h4>Mukul Mysore</h4>
+          <p class="rec-title">Mukul and Ananya worked in the same team in U&I trust</p>
+        </div>
+  
+        <!-- 5 -->
+        <div class="rec-card small">
+          <img src="dp-venkat.jpg" alt="Venkat Nikhil" class="rec-dp">
+          <blockquote>“She is highly adaptable, supportive and encouraging and would be a great asset to any team.”</blockquote>
+          <blockquote>“It was really great to be working under her leadership.”</blockquote>
+          <h4>Venkat Nikhil</h4>
+          <p class="rec-title">Venkat Nikhil reported directly to Ananya at U&I Trust</p>
+        </div>
+  
+        <!-- 6 -->
+        <div class="rec-card small">
+          <img src="dp-prabhu.jpg" alt="Prabhu Sundararaj" class="rec-dp">
+          <blockquote>“She set up sync up calls and gathered status for all the pending tasks from fellow teammates.”</blockquote>
+          <blockquote>“She will become a good team lead and trainer for her fellow trainees.”</blockquote>
+          <h4>Prabhu Sundararaj</h4>
+          <p class="rec-title">Prabhu managed Ananya at Cognizant</p>
+        </div>
+  
+        <!-- 7 -->
+        <div class="rec-card small">
+          <img src="dp-ambreesh.jpg" alt="Ambreesh Naidu" class="rec-dp">
+          <blockquote>“She has shared tons of quality info that a life coach would generally have.”</blockquote>
+          <blockquote>“The way she is handling the project is comparable to experts.”</blockquote>
+          <h4>Ambreesh Naidu</h4>
+          <p class="rec-title">Ambreesh and Ananya worked together at Cognizant</p>
+        </div>
+  
+      </div>
+  
+      <button class="rec-btn prev">&#10094;</button>
+      <button class="rec-btn next">&#10095;</button>
+      <div class="rec-dots"></div>
+    </div>
+  </section>
+  
+  
+  <hr class="gradient-line" />
+
+
+  <section id="contact" data-aos="fade-up" style="background-color: #FFFFFF; padding: 3rem 1rem; text-align: center; max-width: 900px; margin: 2rem auto;">
+    <h2 style="color: #4C1D3D; font-weight: 800; font-size: 2.2rem;">Let's Connect!</h2>
+    <p style="color: #852E4E; font-size: 1.2rem; margin: 1rem 0 2rem;">
+      Whether it’s data, dashboards, or just good coffee, I’d love to hear from you.
+
+    </p>
+  
+    <!-- Social Icons -->
+    <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem;">
+      <a href="https://www.linkedin.com/in/ananyaachar/" target="_blank" style="color: #4C1D3D; font-size: 1.8rem; text-decoration: none;">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:ananya.achar82@gmail.com" style="color: #4C1D3D; font-size: 1.8rem; text-decoration: none;">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  
+    <!-- Contact Info -->
+    <div style="display: flex; flex-direction: column; gap: 1.2rem; align-items: center; font-size: 1.1rem; color: #4C1D3D;">
+      <div>
+       
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
+  <footer>
+    <p>&copy; 2025 Ananya Srinath Achar. All rights reserved.</p>
+  </footer>
+  <script>
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+  
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+<a href="#top" id="backToTop" style="display:none;position:fixed;bottom:30px;right:20px;background-color:#4C1D3D;color:white;padding:10px 15px;border-radius:50%;text-decoration:none;font-weight:bold;font-size:18px;">↑</a>
+
+<script>
+  const backToTop = document.getElementById('backToTop');
+  window.onscroll = () => {
+    backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+  };
+</script>
+<script>
+  window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a');
+
+    let currentSection = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      if (scrollY >= sectionTop) {
+        currentSection = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').includes(currentSection)) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+<script>
+  const recTrack = document.querySelector('.rec-track');
+  const recCards = Array.from(recTrack.children);
+  const nextRec = document.querySelector('.rec-btn.next');
+  const prevRec = document.querySelector('.rec-btn.prev');
+  const recDotsNav = document.querySelector('.rec-dots');
+  const recCount = recCards.length;
+  let recIndex = 0;
+
+  for (let i = 0; i < recCount; i++) {
+    const dot = document.createElement('span');
+    if (i === 0) dot.classList.add('active');
+    recDotsNav.appendChild(dot);
+  }
+
+  const recDots = Array.from(recDotsNav.children);
+
+  function updateRecCarousel(i) {
+    const width = recCards[0].getBoundingClientRect().width;
+    recTrack.style.transform = `translateX(-${width * i}px)`;
+    recDots.forEach(dot => dot.classList.remove('active'));
+    recDots[i].classList.add('active');
+  }
+
+  nextRec.addEventListener('click', () => {
+    recIndex = (recIndex + 1) % recCount;
+    updateRecCarousel(recIndex);
+  });
+
+  prevRec.addEventListener('click', () => {
+    recIndex = (recIndex - 1 + recCount) % recCount;
+    updateRecCarousel(recIndex);
+  });
+
+  recDots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      recIndex = i;
+      updateRecCarousel(recIndex);
+    });
+  });
+
+  // Auto-slide every 7s
+  setInterval(() => {
+    recIndex = (recIndex + 1) % recCount;
+    updateRecCarousel(recIndex);
+  }, 7000);
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init({ duration: 800, once: true });</script>
+
+<script>
+  const leadershipTrack = document.querySelector('#leadership-carousel .carousel-track');
+  const leadershipCards = Array.from(leadershipTrack.children);
+  const leadershipDots = document.getElementById('leadership-dots');
+  let leadershipIndex = 0;
+
+  leadershipCards.forEach((_, i) => {
+    const dot = document.createElement('span');
+    dot.addEventListener('click', () => changeLeadershipSlide(i - leadershipIndex));
+    if (i === 0) dot.classList.add('active');
+    leadershipDots.appendChild(dot);
+  });
+
+  function updateLeadershipCarousel() {
+    const width = leadershipCards[0].getBoundingClientRect().width;
+    leadershipTrack.style.transform = `translateX(-${width * leadershipIndex}px)`;
+    [...leadershipDots.children].forEach(dot => dot.classList.remove('active'));
+    leadershipDots.children[leadershipIndex].classList.add('active');
+  }
+
+  function changeLeadershipSlide(direction) {
+    leadershipIndex = (leadershipIndex + direction + leadershipCards.length) % leadershipCards.length;
+    updateLeadershipCarousel();
+  }
+
+  setInterval(() => changeLeadershipSlide(1), 7000);
+</script>
+
+  
+</body>
+</html>
