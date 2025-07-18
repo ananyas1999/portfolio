@@ -39,6 +39,94 @@
   transform: translateY(0);
   
 }
+@media (max-width: 768px) {
+  /* Navigation adjustments */
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.4rem 0;
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  /* Header image */
+  header img {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* Section padding */
+  section {
+    padding: 1.5rem 1rem;
+  }
+
+  /* About + Education cards */
+  #about-education > div {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  /* Project cards */
+  #projects .project-card,
+  .carousel-card,
+  .cert-booklet,
+  .rec-card.small {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  /* Skills section */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .skill-item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .label {
+    font-size: 0.8rem;
+  }
+
+  /* Carousels */
+  .carousel {
+    padding: 0 1rem;
+    scroll-padding: 1rem;
+  }
+
+  .carousel-card {
+    flex: 0 0 90%;
+    max-width: 90%;
+    scroll-snap-align: center;
+  }
+
+  .carousel-button {
+    display: none;
+  }
+
+  /* Timeline (experience) */
+  .experience-card {
+    margin-bottom: 2rem;
+  }
+
+  /* Recommendations */
+  .rec-card.small {
+    min-width: 95vw;
+  }
+
+  .rec-btn {
+    display: none;
+  }
+}
 
 
   </style>
