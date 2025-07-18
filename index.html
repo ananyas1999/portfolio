@@ -127,6 +127,30 @@
     display: none;
   }
 }
+@media (max-width: 768px) {
+  #projects div[onclick] {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+  }
+
+  .carousel-card {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill-item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skill-item .label {
+    font-size: 0.8rem;
+  }
+}
 
 
   </style>
